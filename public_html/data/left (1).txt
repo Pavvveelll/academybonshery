@@ -1,0 +1,81 @@
+﻿<div class="braun">
+      <div class="gl">Ближайшие группы</div>
+      <ul>         
+          </p>                   
+          </p>
+          <li><a href="/nabor/" >Курсы груминга с нуля</a></li>
+          </p>                       
+          </p>
+          </p>
+          <li>2025 год</li>
+          </p>
+          </p>
+          </p>        
+          </p>          
+          </p>          
+          </p>
+          </p>
+          </p>
+          </p>
+          <li><a href="/nabor/" >Курс «Интенсив» 27.01-05.02</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Базовый» 19-23 февраля</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Интенсив» 1-10 марта</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Базовый» 19-23 марта</li>
+          </p>
+          </p>
+          <li> > <a href="/nabor/" >Все подробности...</a></li>
+          </p>            
+          </p>  
+          </p>       
+          </p> 
+          </p>          
+          </p>
+
+
+      </ul>
+</div>
+<div class="braun">
+    <div class="braun_center"><strong>Профессионалам</strong></div>
+    <ul> 
+        </p>       
+        </p> 
+        </p>
+        </p>
+        </p>
+        </p> 
+        <li>ФЕВРАЛЬ 2025</li> 
+        </p>  
+        <li><a href="/master_klass/grooming_tech/">Техники груминга. 6-8 февраля</a></li>        
+        </p>  
+        <li><a href="/master_klass/stripping_days/">Stripping Days. 26-27 февраля</a></li>   
+        </p>  
+        </p> 
+        <li>ВИДЕО-уроки</li>
+        </p> 
+        <li><a href="/master_klass/masterklass_bichon_online/">Бишон. Породный и Пэт. А. Иванова</a></li>    
+        </p> 
+        <li><a href="/master_klass/masterklass_yorkie_online/">ЙОРК от Чемпиона. А. Иванова</a></li>           
+        </p>  
+        <li><a href="/master_klass/masterklass_shitcu_online/">Ши-тцу от Чемпиона. А. Иванова. ХИТ!!!</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_maltese_online/">Мальтезе от Чемпиона. А. Иванова.</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_poodlle_bishon_online/">Бишон, пэт груминг. Людмила Белова</a></li>   
+         </p> 
+        <li><a href="/master_klass/lessons_milan_dosen/">Ризен, цверг, джек. Milan Došen (эксперт FCI). ЭКСКЛЮЗИВ!</a></li>            
+        </p>  
+        <li><a href="/master_klass/trimming_fox_minchenko/">Тримминг фокса. Нина Минченко</a></li>
+        </p> 
+        <li><a href="/master_klass/udalennoe_obuchenie/">Заочный курс "Ветеринария для грумеров". Руслан Алиев</a></li> 
+        <li><a href="/master_klass/webinar_groombusiness/">Вебинар "Всё о ГрумБизнесе". Диана Череменцова</a></li>         
+        <li> > <a href="/master_klass/">Все мастер-классы...</a></li>
+
+
+
+    </ul>
+</div>
+
+

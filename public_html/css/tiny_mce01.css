@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+    font-size: 12px;
+}
+.block {
+	background-color: #462F1F;
+	padding: 5px;
+	/*font-size: 15px;*/
+	color:#FEF2CD;
+	border: 1px solid #FEF2CD;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.comm{
+	background-image: url(/img/comm.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #FFF2E1;
+	color: #25160F;
+	padding: 10px;
+	margin-bottom:5px;
+}
+.kortable{
+	background-color: #945027;
+}
+.polwidth{
+	border:solid 1px #5c412d;
+ padding: 5px;
+ margin:5px;
+}
+.polwidth div{
+	border:solid 1px #ad7a54;
+ padding: 5px;
+ margin:5px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.podpblock {
+	border-radius:5px;
+	background-color: #d0a382;
+	padding: 8px;
+	margin: 5px 5px 10px;
+}
+.list-chek{
+    list-style: outside url("/img/confirm_16.png");
+    /*line-height: 18px;*/
+    font-size: 16px;
+}
+.list-chek li{
+    margin-top: 4px;
+    line-height: 18px
+}
+.list-star{
+    list-style: outside url("/img/favorites_16.png");
+    font-size: 15px;
+}
+.list-star li{
+    margin-top: 2px;
+    line-height: 16px
+}
+.list-arrow{
+    list-style: outside url("/img/arrow-forward_16.png");
+    font-size: 15px;
+}
+.list-arrow li{
+    margin-top: 2px;
+    line-height: 16px
+}
+.list-plus{
+    list-style: outside url("/img/add_16.png");
+    font-size: 15px;
+}
+.list-plus li{
+    margin-top: 2px;
+    line-height: 16px
+}
+
+.mess{
+    display: inline-block;
+    vertical-align: top;
+    height:32px;
+    margin-right: 5px;
+
+}
+.mess_icon{
+    width: 32px;
+    text-decoration: none;
+    background: 0 0 no-repeat url("/img/msngrs2.png");
+}
+.mess_whats{
+    background-position: -32px 0;
+}
+.mess_viber{
+    background-position: 0 0;
+}
+.mess_tg{
+    background-position: -160px 0;
+}
+.mess_email{
+    background-position: -64px 0;
+}
+.mess_txt{
+    line-height: 32px;
+}

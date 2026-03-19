@@ -1,0 +1,195 @@
+.section {
+  padding: 1rem 0 3.2rem;
+}
+
+.container {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  background: linear-gradient(130deg, var(--color-accent-brown), var(--color-accent-brown-strong));
+  color: var(--color-text-on-dark);
+  padding: 1.2rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(51, 40, 30, 0.22);
+}
+
+.title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.85rem, 3vw, 2.45rem);
+  line-height: 1.1;
+}
+
+.text {
+  margin-top: 0.8rem;
+  line-height: 1.75;
+  color: color-mix(in srgb, var(--color-text-on-dark) 92%, transparent);
+}
+
+.form {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field span {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--color-text-on-dark);
+  padding: 0.65rem 0.8rem;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 0;
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: color-mix(in srgb, var(--color-text-on-dark) 70%, transparent);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 112px;
+}
+
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.submitButton {
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--color-surface-strong) 94%, transparent);
+  color: var(--color-accent-brown-strong);
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(64, 48, 38, 0.25);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.successText,
+.errorText {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.successText {
+  color: #effee4;
+}
+
+.errorText {
+  color: #ffe9e0;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.primary,
+.secondary {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.primary {
+  background: var(--color-surface-strong);
+  color: var(--color-accent-brown-strong);
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+}
+
+.primary:hover,
+.secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(45, 34, 26, 0.25);
+}
+
+.tooltipTarget {
+  position: relative;
+}
+
+.tooltipTarget::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translate(-50%, 4px);
+  background: rgba(46, 40, 35, 0.96);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 10;
+}
+
+.tooltipTarget:hover::after,
+.tooltipTarget:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}

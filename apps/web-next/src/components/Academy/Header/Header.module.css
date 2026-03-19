@@ -1,0 +1,652 @@
+.siteShell {
+  position: relative;
+  background: transparent;
+}
+
+.headerWrap {
+  position: relative;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeRise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 1rem 0 1.25rem;
+}
+
+.headerTop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  animation: fadeRise 0.55s ease-out both;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid var(--color-border-gold);
+  background: transparent;
+  box-shadow: 0 6px 18px rgba(60, 64, 74, 0.08), inset 0 0 0 1px rgba(255, 251, 240, 0.5);
+  padding: 0.95rem 1rem 1rem;
+}
+
+.shine {
+  display: none;
+  position: absolute;
+  top: -18%;
+  left: -14%;
+  width: 54%;
+  height: 160%;
+  background: linear-gradient(95deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0));
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.bannerTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brandCluster {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logoWrap {
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: radial-gradient(circle at 35% 35%, #fffdfa, #f3ebda);
+  box-shadow: 0 8px 22px rgba(58, 62, 72, 0.2);
+  border: 1px solid rgba(184, 137, 59, 0.58);
+}
+
+.logoSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: var(--color-accent-gold);
+  padding: 10px;
+}
+
+.titleBlock {
+  text-align: center;
+}
+
+.brandName {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: var(--color-accent-brown-strong);
+  text-shadow: 0 1px 0 #fff7e4;
+}
+
+.brandSubtitle {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--color-accent-brown) 82%, transparent);
+}
+
+.goldLine {
+  margin-top: 0.85rem;
+  height: 4px;
+  width: 100%;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255, 251, 236, 0.95), rgba(255, 251, 236, 0)),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-accent-gold) 55%, #fff3c8),
+      color-mix(in srgb, var(--color-accent-gold) 80%, #d3a45a) 55%,
+      color-mix(in srgb, var(--color-accent-gold) 52%, #fff0b6) 100%
+    );
+}
+
+.bannerBottom {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  color: var(--color-accent-brown-strong);
+}
+
+.phone {
+  text-decoration: none;
+  color: inherit;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.separator {
+  width: 1px;
+  height: 1.8rem;
+  background: rgba(109, 111, 117, 0.36);
+}
+
+.workTime {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1rem, 3vw, 1.7rem);
+  line-height: 1.2;
+}
+
+.navStrip {
+  margin-top: 0;
+  border-radius: 16px;
+  border: 1px solid var(--color-border-soft);
+  background: transparent;
+  backdrop-filter: none;
+  padding: 0.65rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.34s ease, transform 0.34s ease;
+}
+
+.menu a:hover {
+  color: var(--color-accent-brown);
+  transform: translateY(-1px);
+}
+
+.signupButton {
+  font-family: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid var(--color-accent-brown);
+  padding: 0.48rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent-brown);
+  background: linear-gradient(145deg, #fffdf4, #f8e9cc);
+  text-decoration: none;
+  transition: transform 0.34s ease, box-shadow 0.34s ease, background 0.34s ease, color 0.34s ease, border-color 0.34s ease;
+}
+
+.signupButton:hover {
+  background: var(--color-accent-brown);
+  border-color: var(--color-accent-brown);
+  color: var(--color-surface-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(111, 101, 88, 0.25);
+}
+
+.infoTicker {
+  margin-top: 0.55rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-border-gold) 70%, transparent);
+  background: color-mix(in srgb, var(--color-surface-strong) 76%, transparent);
+  overflow: hidden;
+  position: relative;
+}
+
+.tickerLane {
+  display: flex;
+  width: max-content;
+  animation: tickerMove 38s linear infinite;
+}
+
+.infoTicker:hover .tickerLane {
+  animation-play-state: paused;
+}
+
+.tickerTrack {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.tickerItem {
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.45rem 1.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--color-accent-brown-strong);
+  position: relative;
+  transform-origin: center;
+  transition: transform 0.34s ease, color 0.34s ease;
+}
+
+.tickerItem:hover,
+.tickerItem:focus-visible {
+  transform: scale(1.07);
+  color: var(--color-accent-brown);
+}
+
+.tickerItem::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-accent-gold) 75%, transparent);
+  transform: translateY(-50%);
+}
+
+.heroStage {
+  margin-top: 0.8rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid var(--color-border-soft);
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr;
+  animation: fadeRise 0.7s ease-out both;
+}
+
+.heroGlow {
+  display: none;
+  position: absolute;
+  inset: auto -18% -32% auto;
+  width: 62%;
+  height: 72%;
+  background: radial-gradient(circle, rgba(214, 182, 118, 0.38), rgba(214, 182, 118, 0));
+  pointer-events: none;
+}
+
+.heroText {
+  position: relative;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.heroKicker {
+  margin: 0;
+  color: var(--color-accent-brown-strong);
+  font-family: var(--font-display), serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.heroTitle {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-display), serif;
+  color: var(--color-text-primary);
+  font-size: clamp(1.8rem, 5.3vw, 3.1rem);
+  line-height: 1;
+}
+
+.heroDescription {
+  margin: 0.65rem 0 0;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  max-width: 38rem;
+}
+
+.heroActions {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.heroPrimary,
+.heroSecondary {
+  text-decoration: none;
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  padding: 0.52rem 0.95rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+  transition: transform 0.34s ease, box-shadow 0.34s ease, background 0.34s ease, color 0.34s ease, border-color 0.34s ease;
+}
+
+.heroPrimary {
+  background: var(--color-accent-brown);
+  color: var(--color-surface-strong);
+}
+
+.heroPrimary:hover {
+  background: var(--color-accent-brown-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(111, 101, 88, 0.24);
+}
+
+.heroSecondary {
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-text-secondary);
+  background: color-mix(in srgb, var(--color-surface-strong) 88%, transparent);
+}
+
+.heroSecondary:hover {
+  color: var(--color-accent-brown-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(84, 88, 96, 0.16);
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  background: rgba(28, 31, 36, 0.56);
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.modalCard {
+  width: min(34rem, 100%);
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid var(--color-border-soft);
+  background: linear-gradient(140deg, #f7f3ea 0%, #efe9dd 100%);
+  box-shadow: var(--shadow-strong);
+  padding: 1rem;
+}
+
+.modalClose {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modalTitle {
+  margin: 0;
+  font-family: var(--font-display), serif;
+  color: var(--color-text-primary);
+  font-size: clamp(1.4rem, 4.2vw, 2.1rem);
+}
+
+.modalText {
+  margin: 0.45rem 0 0;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.modalForm {
+  margin-top: 0.85rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.modalField {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.modalField span {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.modalField input,
+.modalField textarea {
+  width: 100%;
+  border-radius: 11px;
+  border: 1px solid var(--color-border-soft);
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--color-text-primary);
+  padding: 0.62rem 0.72rem;
+  font: inherit;
+}
+
+.modalField textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.modalSubmit {
+  margin-top: 0.2rem;
+  border: 1px solid var(--color-accent-brown);
+  border-radius: 999px;
+  background: var(--color-accent-brown);
+  color: var(--color-surface-strong);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.62rem 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.modalSubmit:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(111, 101, 88, 0.24);
+}
+
+.modalSubmit:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+.modalSuccess,
+.modalError {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.modalSuccess {
+  color: #3f7a2d;
+}
+
+.modalError {
+  color: #b64935;
+}
+
+.heroMedia {
+  position: relative;
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.heroMedia img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.heroStage:hover .heroMedia img {
+  transform: scale(1.03);
+}
+
+.tooltipTarget {
+  position: relative;
+}
+
+.tooltipTarget::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translate(-50%, 4px);
+  background: rgba(46, 40, 35, 0.96);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+  z-index: 12;
+}
+
+.tooltipTarget:hover::after,
+.tooltipTarget:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1.1rem 0 1.4rem;
+  }
+
+  .headerTop {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    align-items: stretch;
+  }
+
+  .banner {
+    padding: 1rem 1.25rem 1.1rem;
+  }
+
+  .navStrip {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    min-width: 0;
+    padding: 0.85rem 1rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.55rem;
+  }
+
+  .signupButton {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .bannerTop {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 1.15rem;
+  }
+
+  .titleBlock {
+    text-align: left;
+  }
+
+  .separator {
+    height: 2.1rem;
+  }
+
+  .heroText {
+    padding: 1.2rem 1.25rem;
+  }
+
+  .modalCard {
+    padding: 1.2rem 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 1.25rem 0 1.5rem;
+  }
+
+  .headerTop {
+    grid-template-columns: minmax(0, 1fr) 240px;
+  }
+
+  .logoWrap {
+    width: 104px;
+    height: 104px;
+  }
+
+  .navStrip {
+    padding: 0.7rem 1rem;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+  }
+
+  .heroStage {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .heroMedia {
+    border-top: 0;
+    border-left: 1px solid var(--color-border-soft);
+  }
+
+  .heroMedia img {
+    aspect-ratio: 4 / 3;
+    height: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerTop,
+  .heroStage,
+  .tickerTrack,
+  .heroMedia img,
+  .signupButton,
+  .heroPrimary,
+  .heroSecondary,
+  .modalSubmit,
+  .menu a,
+  .tooltipTarget::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}

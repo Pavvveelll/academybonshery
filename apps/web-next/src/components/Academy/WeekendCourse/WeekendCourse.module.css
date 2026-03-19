@@ -1,0 +1,93 @@
+.section {
+  padding: 1rem 0 1.5rem;
+}
+
+.container {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  border: 1px solid var(--color-border-gold);
+  background: linear-gradient(145deg, rgba(255, 245, 232, 0.96), rgba(255, 255, 255, 0.94));
+  padding: 1.1rem;
+}
+
+.badge {
+  display: inline-flex;
+  border-radius: 999px;
+  background: var(--color-surface-strong);
+  color: var(--color-accent-brown);
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 0.7rem;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  color: var(--color-text-primary);
+}
+
+.status {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: var(--color-accent-brown);
+}
+
+.text {
+  margin-top: 0.6rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+.list {
+  margin-top: 0.9rem;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.list li {
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-gold);
+  font-weight: 700;
+}
+
+.cta {
+  margin-top: 0.9rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.ctaLink {
+  display: inline-flex;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  border-radius: 999px;
+  background: var(--color-accent-brown);
+  color: var(--color-surface-strong);
+  padding: 0.58rem 1.1rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.ctaLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(111, 101, 88, 0.22);
+}

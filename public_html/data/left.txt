@@ -1,0 +1,111 @@
+﻿<div class="braun">
+      <div class="gl">Ближайшие группы</div>
+      <ul>         
+          </p>                   
+          </p>
+          <li><a href="/nabor/" >Курсы груминга с нуля</a></li>
+          </p>                       
+          </p>
+          </p>
+          <li>2026 год</li>
+          </p>
+          </p>
+          </p>        
+          </p>          
+          </p>          
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>         
+          <li><a href="/nabor/" >Курс «Базовый» 12-16 марта</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 12-18 марта</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Интенсив» 12-21 марта</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Базовый» 16-20 апреля</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 16-22 апреля</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Интенсив» 16-25 апреля</li>
+          </p>
+          </p>
+          </p>
+          </p>
+          </p>
+          <li> > <a href="/nabor/" >Все подробности...</a></li>
+          </p>            
+          </p>  
+          </p>       
+          </p> 
+          </p>          
+          </p>
+
+
+      </ul>
+</div>
+<div class="braun">
+    <div class="braun_center"><strong>Профессионалам</strong></div>
+    <ul> 
+        </p>       
+        </p> 
+      
+        </p>
+        </p> 
+        </p>         
+        </p>         
+        </p>
+        <li>МАРТ 2026</li> 
+        </p>               
+        <li><a href="/master_klass/grooming_tech/">Техника груминга. Марина Лаговская. 23-25.03</a></li>         
+        </p>
+        <li>МАЙ 2026</li> 
+        </p>               
+        <li><a href="/master_klass/course_Shim_Eun_Mi/">Курс от Shim Eun Mi (Корея). 12-15.05</a></li>  
+        </p>            
+        <li><a href="/master_klass/course_Yaya_Qian/">Курс по валянию. Yaya Qian (Китай). 18-20.05</a></li>  
+        </p>
+        <li>ИЮЛЬ 2026</li> 
+        </p>               
+        <li><a href="/master_klass/course_Mei_Iseyama/">Курс от Mei Iseyama (Япония). 15-17.07</a></li>  
+        </p>
+        <li>ВИДЕО-уроки</li>
+        </p> 
+        </p> 
+        <li><a href="/master_klass/pet_york_online/">Йорк от А до Я. М. Лаговская</a></li>
+        </p> 
+        <li><a href="/master_klass/korea_online/">Корейский курс, 3 урока</a></li> 
+        </p> 
+        <li><a href="/master_klass/masterklass_bichon_online/">Бишон. Породный и Пэт. А. Иванова</a></li>    
+        </p> 
+        <li><a href="/master_klass/masterklass_yorkie_online/">Йорк Микки. А. Иванова</a></li> 
+        </p> 
+        <li><a href="/master_klass/masterklass_yorkie_online_classic/">Йорк Классика. А. Иванова</a></li>              
+        </p>  
+        <li><a href="/master_klass/masterklass_shitcu_online/">Ши-тцу от Чемпиона. А. Иванова. ХИТ!!!</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_maltese_online/">Мальтезе от Чемпиона. А. Иванова.</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_poodlle_bishon_online/">Бишон, пэт груминг. Людмила Белова</a></li>   
+         </p> 
+        <li><a href="/master_klass/lessons_milan_dosen/">Ризен, цверг, джек. Milan Došen (эксперт FCI). ЭКСКЛЮЗИВ!</a></li>            
+        </p>  
+        <li><a href="/master_klass/trimming_fox_minchenko/">Тримминг фокса. Нина Минченко</a></li>
+        </p> 
+        <li><a href="/master_klass/udalennoe_obuchenie/">Заочный курс "Ветеринария для грумеров". Руслан Алиев</a></li> 
+        </p> 
+        <li><a href="/master_klass/webinar_groombusiness/">Вебинар "Всё о ГрумБизнесе". Диана Череменцова</a></li>    
+        </p>      
+        <li> > <a href="/master_klass/">Все мастер-классы...</a></li>
+
+
+
+    </ul>
+</div>
+
+

@@ -1,0 +1,3 @@
+
+<img src="http://chart.apis.google.com/chart?chxl=1:|<?=implode("|",array_reverse($chart_col_name))?>&chxr=0,0,<?=$chart_max?>&chxs=0,676767,12.5,0,l,676767&chxt=y,x&chbh=a,4,7&chs=440x225&cht=bvs&chco=008000,FFE79F&chds=0,<?=$chart_max?>,0,<?=$chart_max?>&chd=t:<?= implode(",", array_reverse($chart_data1_arr))?>|<?= implode(",", array_reverse($chart_data2_arr))?>&chma=|5&chdl=%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B4%D1%8B|%D1%80%D0%B0%D0%B7%D0%BE%D1%81%D0%BB%D0%B0%D0%BD%D0%BE&chtt=%D0%AD%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D1%80%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA" width="440" height="225" alt="Эффективность рассылок" />
+ 

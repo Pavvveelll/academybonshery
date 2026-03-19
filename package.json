@@ -1,0 +1,23 @@
+{
+  "name": "petsgroomer-modern",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev -w apps/frontend",
+    "dev:backend": "npm run dev -w apps/backend",
+    "dev:web": "npm run dev -w apps/web-next",
+    "build:frontend": "npm run build -w apps/frontend",
+    "build:backend": "npm run build -w apps/backend",
+    "build:web": "npm run build -w apps/web-next",
+    "start:web": "npm run start -w apps/web-next",
+    "deploy:vercel": "npx vercel --prod",
+    "deploy:ftp": "node scripts/deploy-ftp.mjs"
+  },
+  "devDependencies": {
+    "basic-ftp": "^5.0.5",
+    "dotenv": "^16.4.5"
+  }
+}

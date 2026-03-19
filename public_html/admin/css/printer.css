@@ -1,0 +1,41 @@
+@charset "windows-1251";
+#content {
+	margin: 10px auto;
+	width: 96%;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#content table {
+	border-collapse: collapse;
+}
+
+.bord {
+	/*border: 1px solid #000;*/
+}
+.bord td,.bord th {
+	background-color: #FFF;
+}
+.brder {
+	border: 1px solid #666;
+}
+
+
+
+h1 {
+	font-size: 14px;
+	font-weight:normal;
+	margin: 0px;
+	padding: 0px;
+}
+.ms{
+	font-size:11px;
+	
+}
+p{
+	padding:0px;
+	margin: 0px;
+}
+.mf{
+	
+	font-size:10px;
+}

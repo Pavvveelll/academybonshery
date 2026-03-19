@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Administrator"
+AuthUserFile /home/a0413150/domains/petsgroomer.ru/.htpasswd
+require valid-user

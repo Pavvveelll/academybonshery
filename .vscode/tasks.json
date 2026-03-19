@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Dev Backend",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "dev:backend"],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Dev Vite Frontend",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "dev:frontend"],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Dev Next Web",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "dev:web"],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build Next Web",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "build:web"],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

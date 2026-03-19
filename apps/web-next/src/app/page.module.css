@@ -1,0 +1,29 @@
+.layout {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+.main {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.sectionCard {
+  border-radius: 22px;
+  border: 1px solid var(--color-border-soft);
+  background: color-mix(in srgb, var(--color-surface-strong) 80%, transparent);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
+    gap: 1rem;
+  }
+}

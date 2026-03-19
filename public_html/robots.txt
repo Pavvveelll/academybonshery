@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /admin
+Disallow: /java/
+Disallow: /enter/
+Disallow: /file_manager/
+Disallow: *?s=
+
+Host: https://www.petsgroomer.ru
+Sitemap: https://www.petsgroomer.ru/sitemap.xml

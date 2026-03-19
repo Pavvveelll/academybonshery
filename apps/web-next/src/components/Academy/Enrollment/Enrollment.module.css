@@ -1,0 +1,98 @@
+.section {
+  padding: 1rem 0 3rem;
+}
+
+.container {
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.left {
+  border-radius: 20px;
+  background: linear-gradient(155deg, var(--color-accent-brown), var(--color-accent-brown-strong));
+  color: var(--color-text-on-dark);
+  padding: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.text {
+  margin-top: 0.95rem;
+  color: color-mix(in srgb, var(--color-text-on-dark) 92%, transparent);
+  line-height: 1.7;
+}
+
+.callToAction {
+  margin-top: 1.1rem;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 999px;
+  background: var(--color-surface-strong);
+  color: var(--color-accent-brown-strong);
+  padding: 0.7rem 1.15rem;
+  font-weight: 700;
+}
+
+.right {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.photoWrap {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.photoWrap img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.groupCard {
+  border-radius: 16px;
+  border: 1px solid var(--color-border-soft);
+  background: var(--color-surface);
+  padding: 1rem;
+}
+
+.groupDate {
+  color: var(--color-accent-brown);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.groupCourse {
+  margin-top: 0.35rem;
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+}
+
+.groupDays {
+  margin-top: 0.3rem;
+  color: var(--color-text-secondary);
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 0.95rem;
+  }
+
+  .left {
+    padding: 1.5rem;
+  }
+
+  .right {
+    align-content: start;
+  }
+}

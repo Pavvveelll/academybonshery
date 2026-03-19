@@ -1,0 +1,10 @@
+/* Catalog_only */
+#catalogue_main{width:630px;float:left;padding-bottom:0px;border-bottom: 1px dotted #ccc;margin-bottom:10px;}
+#catalogue_left{width:290px;float:left;}
+#catalogue_right{width:290px;float:left;}
+.cat_box{width:290px;padding-top:0px;padding:10px;padding-right:0px;clear:both;float:left;}
+.cat_box_photo{width:40px;float:left;}
+.cat_box_descr{width:240px;float:left;text-align:left;}
+
+
+

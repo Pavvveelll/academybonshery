@@ -1,0 +1,110 @@
+body {
+    background: #ffffff;
+    color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* HEADER */
+.header {
+    height: 125px;
+    background: linear-gradient(180deg, #ffffff 0%, #f8f6f2 100%);
+    border-bottom: 1px solid #e8e3d9;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.mainContent {
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+/* ТЕКСТ */
+.article {
+    font-size: 15px;
+    color: #1a1a1a;
+}
+
+.article h1 {
+    text-align: center;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* ВТОРИЧНЫЙ ТЕКСТ */
+.article p,
+.nom_des {
+    color: #6b6b6b;
+}
+
+/* ФОНЫ */
+.bgfon {
+    background: linear-gradient(180deg, #ffffff 0%, #faf9f7 100%);
+}
+
+/* КАРТОЧКИ / БЛОКИ */
+.podpblock_bg {
+    background-color: #faf9f7;
+    border: 1px solid #e8e3d9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    color: #1a1a1a;
+}
+
+/* FLEX БЛОКИ */
+.bgflex p {
+    background: #faf9f7;
+    border: 1px solid #ece7de;
+    border-radius: 10px;
+    color: #1a1a1a;
+    transition: 0.3s;
+}
+
+.bgflex p:hover {
+    border-color: #c6a96b;
+    box-shadow: 0 6px 20px rgba(198,169,107,0.15);
+}
+
+/* ЗОЛОТЫЕ АКЦЕНТЫ */
+.bg_supbigtxt,
+.bg_supbigtxt_ega {
+    color: #c6a96b;
+    font-weight: 600;
+}
+
+/* ССЫЛКИ */
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #c6a96b;
+}
+
+/* КНОПКИ (если есть) */
+button,
+.footer-btn {
+    background: #c6a96b;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    transition: 0.3s;
+}
+
+button:hover,
+.footer-btn:hover {
+    background: #b89655;
+}
+
+/* ТАБЛИЦЫ / ТЕКСТ */
+td, p, span, li {
+    color: inherit;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .bgfon {
+        height: unset;
+    }
+}

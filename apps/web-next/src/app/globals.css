@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f2f0eb;
+  --foreground: #2f3238;
+
+  --color-bg-page: #f2f0eb;
+  --color-bg-soft: #f7f5f0;
+  --color-surface: rgba(255, 255, 255, 0.9);
+  --color-surface-strong: #ffffff;
+
+  --color-text-primary: #2f3238;
+  --color-text-secondary: #5f646d;
+  --color-text-muted: #7c828c;
+  --color-text-on-dark: #f6f3ef;
+
+  --color-accent-gold: #c29a52;
+  --color-accent-gold-strong: #a98746;
+  --color-accent-brown: #8e7860;
+  --color-accent-brown-strong: #6f6558;
+
+  --color-border-soft: rgba(111, 101, 88, 0.22);
+  --color-border-gold: rgba(194, 154, 82, 0.38);
+  --color-border-light: rgba(255, 251, 240, 0.9);
+
+  --shadow-soft: 0 12px 30px rgba(60, 64, 74, 0.12);
+  --shadow-strong: 0 22px 44px rgba(64, 68, 78, 0.18);
+
+  --gradient-page:
+    radial-gradient(circle at 14% 20%, rgba(255, 236, 198, 0.38), transparent 44%),
+    radial-gradient(circle at 84% 15%, rgba(224, 214, 190, 0.34), transparent 40%),
+    linear-gradient(165deg, #f7f4ee 0%, #efebe2 35%, #f7f3ec 100%);
+  --gradient-hero:
+    radial-gradient(circle at 10% 10%, rgba(255, 251, 242, 0.95), rgba(240, 232, 214, 0.82)),
+    linear-gradient(104deg, #f8f4e9 0%, #ece4d4 33%, #f6f0e3 70%, #fffaf0 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), sans-serif;
+}

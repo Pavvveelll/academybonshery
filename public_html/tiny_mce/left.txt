@@ -1,0 +1,54 @@
+﻿<div class="braun">
+      <div class="gl">Ближайшие группы</div>
+      <ul>            
+          <li>ЛЕТО 2021</li>    
+          </p>
+          <li><a href="/nabor/" >Курс «База» 15-19 июня</a></li>          
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 21-27 июня</a></li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 12-18 июля</a></li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 26 июля-1 августа</a></li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 9-15 августа</a></li>
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 23-29 августа</a></li>
+          </p>
+          </p>
+          <li><a href="/nabor/obuchenie_pomoshnikov_grumera/" >Курс «Помощник грумера». С ТРУДОЙСТРОЙСТВОМ! Старт 2 и 18 июня</a></li>        
+          </p> 
+          <li><a href="/nabor/#povihodnym" >Основной курс с нуля по выходным! Можно присоединиться с любого дня!</a></li>
+          </p>          
+          <li><a href="/nabor/#vvedenie" >Пробный урок по грумингу</a></li>
+          </p>
+
+
+      </ul>
+</div>
+<div class="braun">
+    <div class="braun_center"><strong>Профессионалам</strong></div>
+    <ul>                 
+        </p>          
+        <li>ИЮНЬ 2021</li>
+        <li><a href="/master_klass/professionalnyj_trimming_cverga/">Практика по триммингу цверга. Елена Левина. 14 июня</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_fox_vest/">Вест и фокс. Практика. Нина Минченко. 30 июня</a></li>
+        </p>         
+        <li>ОНЛАЙН обучение</li>
+        <li><a href="/master_klass/bonshery_online/">ВСЁ о проекте Bonshery Online</a></li> 
+        </p>
+        </p> 
+        </p> 
+        <li>Другие вебинары</li>
+        <li><a href="/master_klass/trimming_fox_minchenko/">ОНЛАЙН МАСТЕР-КЛАСС! Тримминг фокса. Нина Минченко</a></li>
+        <li><a href="/master_klass/udalennoe_obuchenie/">Заочный курс "Ветеринария для грумеров". Руслан Алиев</a></li> 
+        <li><a href="/master_klass/webinar_groombusiness/">Вебинар "Всё о ГрумБизнесе". Диана Череменцова</a></li> 
+        <li> > <a href="/master_klass/">Все мастер-классы...</a></li>
+
+
+
+    </ul>
+</div>
+
+

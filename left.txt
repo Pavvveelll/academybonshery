@@ -1,0 +1,41 @@
+﻿<div class="braun">
+      <div class="gl">Ближайшие группы</div>
+      <ul>          
+          <li>ОСЕНЬ-ЗИМА 2020</li>          
+          <li>НОЯБРЬ</li>
+          <li><a href="/nabor/" >Основной курс 9-15 ноября</a></li>     
+          <li><a href="/nabor/" >Основной курс 23-29 ноября</a></li>
+          <li>ДЕКАБРЬ</li>
+          <li><a href="/nabor/" >Основной курс 7-13 декабря</a></li>
+          <li><a href="/nabor/" >Основной курс 21-27 декабря</a></li>     
+          </p> 
+          <li><a href="/nabor/#povihodnym" >Основной курс с нуля по выходным! Можно присоединиться с любого дня!</a></li>
+          </p>          
+          <li><a href="/nabor/#vvedenie" >Знакомство с грумингом. Один день для сомневающихся!</a></li>
+          </p>
+
+
+      </ul>
+</div>
+<div class="braun">
+    <div class="braun_center"><strong>Профессионалам</strong></div>
+    <ul>     
+        </p> 
+        <li>ДЕКАБРЬ</li>
+        <li><a href="/master_klass/masterklass_fox_vest/">Практика по весту и фоксу. Нина Минченко</a></li> 
+        <li>ОНЛАЙН обучение</li>
+        <li><a href="/master_klass/bonshery_online/">ВСЁ о проекте Bonshery Online</a></li> 
+        </p>
+        </p> 
+        </p> 
+        <li>Другие вебинары</li>
+        <li><a href="/master_klass/udalennoe_obuchenie/">Заочный курс "Ветеринария для грумеров". Руслан Алиев</a></li> 
+        <li><a href="/master_klass/webinar_groombusiness/">Вебинар "Всё о ГрумБизнесе". Диана Череменцова</a></li> 
+        <li> > <a href="/master_klass/">Все мастер-классы...</a></li>
+
+
+
+    </ul>
+</div>
+
+

@@ -1,0 +1,75 @@
+﻿<div class="braun">
+      <div class="gl">Ближайшие группы</div>
+      <ul>         
+          </p>                   
+          </p>
+          <li><a href="/nabor/" >Курсы груминга с нуля</a></li>
+          </p>
+          <li>2023 год</li>                
+          </p>         
+          </p>           
+          </p>   
+          </p>         
+          </p>
+          <li><a href="/nabor/" >Курс «Классика» 18-24 декабря</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Экстра» 18-27 декабря</a></li>
+          </p>
+          <li>2024 год</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Интенсив» 12-21 января</li>
+          </p>
+          <li><a href="/nabor/" >Курс «Базовый» 26-30 января</li>
+          </p>
+          <li> > <a href="/nabor/" >Все подробности...</a></li>
+          </p>            
+          </p>  
+          </p>       
+          </p> 
+          </p>          
+          </p>
+
+
+      </ul>
+</div>
+<div class="braun">
+    <div class="braun_center"><strong>Профессионалам</strong></div>
+    <ul> 
+        </p>
+        <li>НОЯБРЬ 2023</li>              
+        </p>
+        <li><a href="master_klass/training_for_groomers/">Повышение квалификации для грумеров. 29 ноября-2 декабря</a></li>  
+        </p>
+        <li>ДЕКАБРЬ 2023</li> 
+        </p>
+        <li><a href="master_klass/grooming_tech/">Техники груминга: ножницы, углы и другие секреты. 13-15 декабря</a></li>
+        </p>  
+        <li><a href="master_klass/grooming_poodle_practice/">Профессиональный груминг пуделя. 16-17 декабря. Оксана Кошелева</a></li>  
+        </p>
+        </p>
+        <li>ВИДЕО-уроки</li>
+        </p> 
+        <li><a href="/master_klass/masterklass_maneken_online/">Азия на манекене. С практикой! Д. Воронина</a></li>  
+        </p> 
+        <li><a href="/master_klass/masterklass_yorkie_online/">ЙОРК от Чемпиона. А. Иванова</a></li>           
+        </p>  
+        <li><a href="/master_klass/masterklass_shitcu_online/">Ши-тцу от Чемпиона. А. Иванова. ХИТ!!!</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_maltese_online/">Мальтезе от Чемпиона. А. Иванова.</a></li>
+        </p>
+        <li><a href="/master_klass/masterklass_poodlle_bishon_online/">Бишон, пэт груминг. Людмила Белова</a></li>   
+         </p> 
+        <li><a href="/master_klass/lessons_milan_dosen/">Ризен, цверг, джек. Milan Došen (эксперт FCI). ЭКСКЛЮЗИВ!</a></li>            
+        </p>  
+        <li><a href="/master_klass/trimming_fox_minchenko/">Тримминг фокса. Нина Минченко</a></li>
+        </p> 
+        <li><a href="/master_klass/udalennoe_obuchenie/">Заочный курс "Ветеринария для грумеров". Руслан Алиев</a></li> 
+        <li><a href="/master_klass/webinar_groombusiness/">Вебинар "Всё о ГрумБизнесе". Диана Череменцова</a></li>         
+        <li> > <a href="/master_klass/">Все мастер-классы...</a></li>
+
+
+
+    </ul>
+</div>
+
+

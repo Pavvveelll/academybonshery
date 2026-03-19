@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: petsgroomer-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: petsgroomer
+      POSTGRES_PASSWORD: petsgroomer
+      POSTGRES_DB: petsgroomer
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:

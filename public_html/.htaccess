@@ -1,0 +1,43 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !\/$
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ https://www.%1/$1/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} !\/$
+RewriteCond %{HTTP_HOST} ^([^www].*)$
+RewriteRule ^(.*)$ https://www.%1/$1/ [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\?
+RewriteCond %{REQUEST_URI} !\&
+RewriteCond %{REQUEST_URI} !\=
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_URI} ![^\/]$
+RewriteCond %{HTTP_HOST} ^([^www].*)$
+RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTP:PORT} !^443$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z]{1,4}[\?0-9]*/?$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^?]+)?$  index.php?prs=$1   [E=REMOTE_USER:%{HTTP:Authorization},NC,QSA,L]
+
+php_flag register_globals off
+php_value error_log /home/a0413150/domains/petsgroomer.ru/php_errors.log
+
+ExpiresActive on
+ExpiresByType image/jpeg "access plus 3 months"
+ExpiresByType image/gif "access plus 3 months"
+ExpiresByType image/png "access plus 3 months"

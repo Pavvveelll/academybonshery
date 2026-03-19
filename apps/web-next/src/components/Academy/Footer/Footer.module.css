@@ -1,0 +1,283 @@
+﻿.footer {
+  position: relative;
+  background: linear-gradient(160deg, #2a2420 0%, #1e1b18 60%, #242018 100%);
+  color: var(--color-text-on-dark);
+  overflow: hidden;
+}
+
+/* декоративное пятно */
+.glow {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  translate: -50%;
+  width: 700px;
+  height: 320px;
+  background: radial-gradient(ellipse, rgba(194, 154, 82, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── внутренняя сетка ── */
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .inner {
+    grid-template-columns: minmax(260px, 1.4fr) 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* ── 1-я колонка: бренд ── */
+.brandCluster {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logoText {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  color: var(--color-accent-gold);
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.logoText:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 8px 18px rgba(194, 154, 82, 0.22));
+}
+
+.brandSub {
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.55);
+  margin: 0;
+}
+
+/* контакты */
+.contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.contacts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.contactIcon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-accent-gold);
+  opacity: 0.8;
+}
+
+.contactLink {
+  color: rgba(246, 243, 239, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.contactLink:hover {
+  color: var(--color-accent-gold);
+  transform: translateX(2px);
+}
+
+.contactHint {
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.5);
+}
+
+.contactText {
+  font-size: 0.92rem;
+  color: rgba(246, 243, 239, 0.72);
+}
+
+/* ── 2-я колонка: навигация ── */
+.colTitle {
+  font-family: var(--font-display), serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-gold);
+  margin: 0 0 1rem;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.navLink {
+  color: rgba(246, 243, 239, 0.72);
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.2s, transform 0.2s;
+  display: block;
+}
+
+.navLink:hover {
+  color: #fff;
+  transform: translateX(3px);
+}
+
+/* ── 3-я колонка: соцсети ── */
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(246, 243, 239, 0.72);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--color-accent-gold);
+  transform: translateX(3px);
+}
+
+/* оплата */
+.payments {
+  margin-top: 1.8rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.payTitle {
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.5);
+  margin: 0 0 0.6rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.payBadges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.payBadge {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: rgba(246, 243, 239, 0.6);
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.payBadge:hover {
+  transform: translateY(-2px);
+  border-color: rgba(194, 154, 82, 0.65);
+  color: rgba(246, 243, 239, 0.9);
+}
+
+/* ── нижняя полоса ── */
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.bottomInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.copy {
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.38);
+  margin: 0;
+}
+
+.siteLink {
+  font-size: 0.78rem;
+  color: rgba(194, 154, 82, 0.55);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.siteLink:hover {
+  color: var(--color-accent-gold);
+}
+
+.tooltipTarget {
+  position: relative;
+}
+
+.tooltipTarget::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translate(-50%, 4px);
+  background: rgba(46, 40, 35, 0.96);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 10;
+}
+
+.tooltipTarget:hover::after,
+.tooltipTarget:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* убрать неиспользуемые классы nav/social если только в footer */
+.nav {
+}
+
+.social {
+}
+
+.brand {
+}
