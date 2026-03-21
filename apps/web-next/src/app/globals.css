@@ -1,38 +1,61 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f2f0eb;
-  --foreground: #2f3238;
+  --background: #F5F5F5;
+  --foreground: #1C1C1C;
 
-  --color-bg-page: #f2f0eb;
-  --color-bg-soft: #f7f5f0;
-  --color-surface: rgba(255, 255, 255, 0.9);
-  --color-surface-strong: #ffffff;
+  /* Фон */
+  --color-bg-page: #F5F5F5;
+  --color-bg-soft: #EAEAEA;
+  --color-surface: rgba(255,255,255,0.92);
+  --color-surface-strong: #FFFFFF;
 
-  --color-text-primary: #2f3238;
-  --color-text-secondary: #5f646d;
-  --color-text-muted: #7c828c;
-  --color-text-on-dark: #f6f3ef;
+  /* Текст */
+  --color-text-primary: #1C1C1C;
+  --color-text-secondary: #6B6B6B;
+  --color-text-muted: #9A9A9A;
+  --color-text-on-dark: #FFFFFF;
 
-  --color-accent-gold: #c29a52;
-  --color-accent-gold-strong: #a98746;
-  --color-accent-brown: #8e7860;
-  --color-accent-brown-strong: #6f6558;
+  /* Акцент */
+  --color-accent-gold: #C6A96B;
+  --color-accent-gold-strong: #B89655;
+  --color-accent-brown: #C6A96B;
+  --color-accent-brown-strong: #B89655;
 
-  --color-border-soft: rgba(111, 101, 88, 0.22);
-  --color-border-gold: rgba(194, 154, 82, 0.38);
-  --color-border-light: rgba(255, 251, 240, 0.9);
+  /* Бордюры */
+  --color-border-soft: #DADADA;
+  --color-border-gold: rgba(198, 169, 107, 0.45);
+  --color-border-light: rgba(255,255,255,0.9);
 
-  --shadow-soft: 0 12px 30px rgba(60, 64, 74, 0.12);
-  --shadow-strong: 0 22px 44px rgba(64, 68, 78, 0.18);
+  /* Тени */
+  --shadow-soft: 0 10px 30px rgba(0,0,0,0.05);
+  --shadow-strong: 0 20px 40px rgba(0,0,0,0.10);
+  --shadow-card-hover: 0 16px 40px rgba(0,0,0,0.10);
 
-  --gradient-page:
-    radial-gradient(circle at 14% 20%, rgba(255, 236, 198, 0.38), transparent 44%),
-    radial-gradient(circle at 84% 15%, rgba(224, 214, 190, 0.34), transparent 40%),
-    linear-gradient(165deg, #f7f4ee 0%, #efebe2 35%, #f7f3ec 100%);
-  --gradient-hero:
-    radial-gradient(circle at 10% 10%, rgba(255, 251, 242, 0.95), rgba(240, 232, 214, 0.82)),
-    linear-gradient(104deg, #f8f4e9 0%, #ece4d4 33%, #f6f0e3 70%, #fffaf0 100%);
+  /* Кнопки */
+  --btn-radius: 10px;
+  --btn-height: 52px;
+  --btn-padding: 0 28px;
+  --btn-font-size: 16px;
+
+  /* Карточки */
+  --card-radius: 16px;
+  --card-padding: 24px;
+  --card-bg: #FFFFFF;
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+  /* Секции */
+  --section-padding: 100px;
+
+  /* Навигация */
+  --nav-height: 80px;
+
+  /* Footer */
+  --footer-bg: #1C1C1C;
+
+  /* Старые токены (совместимость) */
+  --gradient-page: linear-gradient(180deg, #F5F5F5 0%, #EAEAEA 100%);
+  --gradient-hero: linear-gradient(104deg, #F5F5F5 0%, #FFFFFF 100%);
 }
 
 @theme inline {
@@ -47,4 +70,67 @@ body {
   background: var(--color-bg-page);
   color: var(--color-text-primary);
   font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Глобальные стили секций */
+.section-wrapper {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+/* Глобальные стили кнопок */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  background: var(--color-accent-gold);
+  color: #FFFFFF;
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-gold-strong);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  background: transparent;
+  color: var(--color-accent-gold);
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  border: 1px solid var(--color-accent-gold);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent-gold);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+/* Fade-in анимация для секций */
+@keyframes sectionFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: sectionFadeUp 0.6s ease-out both;
 }

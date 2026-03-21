@@ -17,7 +17,7 @@ const formats: FormatItem[] = [
   },
   {
     id: "base",
-    title: "Курс Базовый (5 дней)",
+    title: "Курс Базовый",
     body: "Подходит для первого шага в профессии. Формат помогает быстро войти в практику и собрать базу, после которой можно продолжить обучение и стажировку.",
   },
   {
@@ -33,7 +33,7 @@ export function Formats() {
   return (
     <section id="formats" className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Форматы обучения</h2>
+        <h2 className={styles.title}>Курсы с нуля</h2>
         <p className={styles.subtitle}>
           Обучение состоит из двух частей: онлайн предобучение и практика в Академии.
           Такой подход позволяет эффективно использовать время на занятиях с моделями.

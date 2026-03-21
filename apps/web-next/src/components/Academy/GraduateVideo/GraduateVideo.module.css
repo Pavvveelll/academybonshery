@@ -7,112 +7,145 @@
   margin: 0 auto;
 }
 
-.layout {
-  display: grid;
-  gap: 0.9rem;
-  grid-template-columns: 1fr;
-  align-items: center;
+.head {
+  max-width: 46rem;
+}
+
+.kicker {
+  margin: 0;
+  color: var(--color-accent-brown-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .title {
+  margin-top: 0.36rem;
   font-family: var(--font-display), serif;
-  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-size: clamp(1.72rem, 3vw, 2.45rem);
   color: var(--color-text-primary);
-}
-
-.text {
-  margin-top: 0.7rem;
-  color: var(--color-text-secondary);
-  line-height: 1.75;
-}
-
-.link {
-  margin-top: 0.9rem;
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: 999px;
-  background: var(--color-accent-brown);
-  color: var(--color-surface-strong);
-  padding: 0.65rem 1rem;
-  font-weight: 700;
-}
-
-.preview {
-  border-radius: 16px;
-  border: 1px solid var(--color-border-soft);
-  background: var(--color-surface-strong);
-  padding: 0.8rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.6rem;
-}
-
-.preview img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  transition: transform 0.25s ease;
-}
-
-.preview img:hover {
-  transform: scale(1.015);
-}
-
-@media (min-width: 900px) {
-  .layout {
-    grid-template-columns: 1.1fr 1fr;
-  }
-
-  .preview {
-    grid-template-columns: 1fr 1fr;
-  }
+  line-height: 1.08;
 }
 
 .subtitle {
   margin-top: 0.5rem;
   color: var(--color-text-secondary);
-  line-height: 1.7;
-  max-width: 44rem;
+  line-height: 1.65;
 }
 
-.testimonials {
+.tabs {
+  margin-top: 0.9rem;
   display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tab {
+  border-radius: 999px;
+  border: 1px solid var(--color-border-soft);
+  background: var(--color-surface-strong);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.tab:hover {
+  transform: translateY(-1px);
+}
+
+.tabActive {
+  background: var(--color-accent-brown);
+  color: var(--color-surface-strong);
+  border-color: var(--color-accent-brown);
+}
+
+.grid {
+  margin-top: 0.82rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
 }
 
 .card {
   border-radius: 16px;
   border: 1px solid var(--color-border-gold);
   background: linear-gradient(145deg, rgba(255, 250, 238, 0.95), rgba(255, 255, 255, 0.9));
-  padding: 1rem 1.15rem;
+  padding: 0.9rem;
 }
 
-.quote {
+.person {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.person img {
+  width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid var(--color-border-soft);
+}
+
+.name {
   margin: 0;
   color: var(--color-text-primary);
-  line-height: 1.7;
   font-size: 0.95rem;
-  font-style: italic;
 }
 
-.cardFooter {
-  margin-top: 0.75rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+.role {
+  margin: 0.12rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
 }
 
-.cardName {
-  font-weight: 700;
+.course {
+  margin-top: 0.58rem;
   color: var(--color-accent-brown-strong);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.result {
+  margin-top: 0.32rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
   font-size: 0.9rem;
 }
 
-.cardMeta {
+.quote {
+  margin: 0.42rem 0 0;
+  color: var(--color-text-primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.videoLink {
+  margin-top: 0.6rem;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-soft);
+  color: var(--color-text-secondary);
+  background: var(--color-surface-strong);
+  padding: 0.42rem 0.75rem;
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  font-weight: 700;
+}
+
+.videoLink:hover {
+  color: var(--color-accent-brown-strong);
+}
+
+@media (min-width: 920px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }

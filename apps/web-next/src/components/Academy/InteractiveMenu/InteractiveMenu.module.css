@@ -1,74 +1,113 @@
 .sidebar {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  position: sticky;
+  top: 0.65rem;
 }
 
 .stickyBox {
-  position: sticky;
-  top: 1rem;
-  border-radius: 18px;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
   border: 1px solid var(--color-border-soft);
-  background: color-mix(in srgb, var(--color-surface-strong) 86%, transparent);
-  padding: 1rem;
-  box-shadow: var(--shadow-soft);
+  background: color-mix(in srgb, var(--color-surface-strong) 92%, transparent);
+  padding: 0.75rem 0.8rem;
+  box-shadow: 0 10px 24px rgba(60, 64, 74, 0.1);
+  z-index: 25;
 }
 
 .title {
   margin: 0;
   font-family: var(--font-display), serif;
-  font-size: 1.25rem;
+  font-size: 1.02rem;
   color: var(--color-text-primary);
 }
 
 .list {
-  margin: 0.9rem 0 0;
+  margin: 0.65rem 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
-  gap: 0.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 .list a {
-  display: block;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--color-text-secondary);
   font-weight: 600;
-  border-radius: 10px;
-  padding: 0.38rem 0.55rem;
+  font-size: 0.82rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-soft);
+  background: color-mix(in srgb, var(--color-surface-strong) 94%, transparent);
+  padding: 0.5rem 0.65rem;
   transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .list a:hover {
   color: var(--color-accent-brown-strong);
-  background: color-mix(in srgb, var(--color-accent-gold) 16%, white);
+  border-color: color-mix(in srgb, var(--color-accent-gold) 55%, transparent);
+  background: color-mix(in srgb, var(--color-accent-gold) 14%, white);
+  transform: translateX(2px);
+}
+
+.activeLink {
+  color: var(--color-surface-strong) !important;
+  border-color: var(--color-accent-brown) !important;
+  background: var(--color-accent-brown) !important;
 }
 
 .infoBox {
-  margin-top: 1rem;
-  border-radius: 14px;
-  border: 1px solid var(--color-border-gold);
-  background: linear-gradient(145deg, rgba(255, 248, 235, 0.95), rgba(249, 239, 220, 0.9));
-  padding: 0.75rem;
+  margin-top: 0.65rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--color-border-gold) 72%, transparent);
+  background: linear-gradient(145deg, rgba(255, 249, 238, 0.95), rgba(251, 242, 226, 0.9));
+  padding: 0.6rem 0.68rem;
   color: var(--color-text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.4;
 }
 
 .infoTitle {
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.22rem;
   color: var(--color-accent-brown);
   font-weight: 700;
 }
 
-.infoBox p {
-  margin: 0.2rem 0;
-}
-
 .infoBox a {
-  margin-top: 0.35rem;
+  margin-top: 0.3rem;
   display: inline-flex;
   color: var(--color-accent-brown-strong);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
+}
+
+.infoBox a:hover {
+  text-decoration: underline;
+}
+
+.toTopButton {
+  margin-top: 0.6rem;
+  width: 100%;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--color-surface-strong) 90%, transparent);
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.65rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toTopButton:hover {
+  color: var(--color-accent-brown-strong);
+  border-color: color-mix(in srgb, var(--color-accent-gold) 55%, transparent);
 }
 
 .mobileToggle {
@@ -141,13 +180,32 @@
   font-weight: 600;
 }
 
-@media (min-width: 1000px) {
-  .sidebar {
-    display: block;
-  }
+.mobileActiveLink {
+  color: var(--color-surface-strong) !important;
+  border-color: var(--color-accent-brown) !important;
+  background: var(--color-accent-brown) !important;
+}
 
+.mobileTopButton {
+  margin-top: 0.7rem;
+  width: 100%;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 9px;
+  background: #fff;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  padding: 0.55rem 0.65rem;
+}
+
+@media (min-width: 1100px) {
   .mobileToggle,
   .mobilePanel {
+    display: none;
+  }
+}
+
+@media (max-width: 1099px) {
+  .sidebar {
     display: none;
   }
 }

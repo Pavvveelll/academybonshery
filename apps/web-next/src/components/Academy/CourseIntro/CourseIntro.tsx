@@ -15,20 +15,7 @@ export function CourseIntro() {
         <p className={styles.kicker}>Основной курс обучения грумингу с нуля</p>
         <h2 className={styles.title}>Форматы основного курса</h2>
 
-        <div className={styles.grid}>
-          <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Базовый</h3>
-            <p className={styles.cardMeta}>5 дней обучения</p>
-          </article>
-          <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Классика</h3>
-            <p className={styles.cardMeta}>7 дней обучения</p>
-          </article>
-          <article className={styles.card}>
-            <h3 className={styles.cardTitle}>Интенсив</h3>
-            <p className={styles.cardMeta}>10 дней обучения</p>
-          </article>
-        </div>
+        <p className={styles.formatsText}>Базовый, Классика и Интенсив.</p>
 
         <div className={styles.panel}>
           <h3 className={styles.panelTitle}>Все курсы Академии груминга Боншери это:</h3>

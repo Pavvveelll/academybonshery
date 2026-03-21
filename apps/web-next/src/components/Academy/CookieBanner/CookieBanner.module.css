@@ -1,0 +1,77 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(28, 28, 28, 0.55);
+  display: grid;
+  place-items: end center;
+  padding: 0 1rem 2rem;
+}
+
+.banner {
+  width: min(640px, 100%);
+  background: var(--color-surface-strong);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow-strong);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideUp 0.35s ease-out both;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btnPrimary {
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  background: var(--color-accent-gold);
+  color: #fff;
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btnPrimary:hover {
+  background: var(--color-accent-gold-strong);
+  transform: translateY(-1px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  background: transparent;
+  color: var(--color-accent-gold);
+  font-size: var(--btn-font-size);
+  font-weight: 500;
+  border: 1px solid var(--color-accent-gold);
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background: var(--color-accent-gold);
+  color: #fff;
+}

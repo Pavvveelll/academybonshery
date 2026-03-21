@@ -242,6 +242,23 @@
   color: var(--color-accent-gold);
 }
 
+.legalLinks {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.legalLink {
+  font-size: 0.78rem;
+  color: rgba(246, 243, 239, 0.38);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legalLink:hover {
+  color: rgba(194, 154, 82, 0.8);
+}
+
 .tooltipTarget {
   position: relative;
 }

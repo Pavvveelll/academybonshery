@@ -26,29 +26,10 @@
   color: var(--color-text-primary);
 }
 
-.grid {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 0.75rem;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.card {
-  padding: 1.1rem 1.2rem;
-  border-radius: 18px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(250, 244, 233, 0.95));
-  border: 1px solid var(--color-border-soft);
-  box-shadow: var(--shadow-soft);
-}
-
-.cardTitle {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--color-text-primary);
-}
-
-.cardMeta {
-  margin-top: 0.35rem;
+.formatsText {
+  margin-top: 0.7rem;
+  font-size: 1.02rem;
+  font-weight: 600;
   color: var(--color-text-secondary);
 }
 
@@ -90,11 +71,6 @@
 @media (min-width: 768px) {
   .section {
     padding: 3rem 0 1.5rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.9rem;
   }
 
   .panel {

@@ -2,13 +2,14 @@ import styles from "./Footer.module.css";
 import { LogoTextSvg } from "./LogoTextSvg";
 
 const navLinks = [
-  { label: "Основной курс", href: "#course" },
-  { label: "Форматы обучения", href: "#formats" },
-  { label: "Ближайшие группы", href: "#enrollment" },
-  { label: "Что входит в курс", href: "#includes" },
+  { label: "О академии", href: "#about" },
+  { label: "Международный опыт", href: "#international" },
+  { label: "Курсы с нуля", href: "#formats" },
+  { label: "Ближайшие наборы", href: "#enrollment" },
+  { label: "Программы роста", href: "#growth" },
+  { label: "День открытых дверей", href: "#open-doors" },
+  { label: "Франшиза", href: "#franchise" },
   { label: "FAQ", href: "#faq" },
-  { label: "Курс выходного дня", href: "#weekend" },
-  { label: "Наши выпускники", href: "#graduates" },
   { label: "Контакты", href: "#contacts" },
   { label: "Вакансии", href: "https://www.petsgroomer.ru/vacancy_rabota_grumerom/" },
   { label: "Сведения об организации", href: "https://www.petsgroomer.ru/sveden/" },
@@ -25,31 +26,20 @@ const socialLinks = [
     ),
   },
   {
-    label: "Instagram",
-    href: "https://www.instagram.com/bonshery_groom/",
+    label: "Telegram",
+    href: "https://t.me/bonshery_groom",
     icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="2" y="2" width="20" height="20" rx="5" />
-        <circle cx="12" cy="12" r="4" />
-        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
       </svg>
     ),
   },
   {
-    label: "Одноклассники",
-    href: "https://ok.ru/group/54986486186225/",
+    label: "MAX",
+    href: "https://max.ru/bonshery",
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 12.75c2.9 0 5.25-2.35 5.25-5.25S14.9 2.25 12 2.25 6.75 4.6 6.75 7.5 9.1 12.75 12 12.75zm0-8.5c1.79 0 3.25 1.46 3.25 3.25S13.79 10.75 12 10.75 8.75 9.29 8.75 7.5 10.21 4.25 12 4.25zm4.21 10.95a9.7 9.7 0 0 1-2.71.76l2.77 2.77a1 1 0 0 1-1.41 1.41L12 17.27l-2.86 2.87a1 1 0 1 1-1.41-1.41l2.77-2.77a9.7 9.7 0 0 1-2.71-.76 1 1 0 1 1 .82-1.82C9.71 14.11 10.84 14.5 12 14.5s2.29-.39 3.39-.87a1 1 0 1 1 .82 1.82v-.25z" />
-      </svg>
-    ),
-  },
-  {
-    label: "Facebook",
-    href: "https://www.facebook.com/BonsheryAcademy/",
-    icon: (
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.5 14.5h-2.25L12 13.25 9.75 16.5H7.5L10.875 12 7.5 7.5h2.25L12 10.75 14.25 7.5H16.5L13.125 12 16.5 16.5z" />
       </svg>
     ),
   },
@@ -65,21 +55,26 @@ export function Footer() {
         <div className={styles.brand}>
           <div className={styles.brandCluster}>
               <LogoTextSvg className={styles.logoText} />
-              <p className={styles.brandSub}>Академия груминга с 2009 года</p>
+              <p className={styles.brandSub}>Основана в 2007 году</p>
           </div>
 
           <ul className={styles.contacts}>
             <li>
               <span className={styles.contactIcon} aria-hidden="true">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <span className={styles.contactText}>г. Москва, ул. Генерала Белобородова, дом 35/2</span>
+            </li>
+            <li>
+              <span className={styles.contactIcon} aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </span>
-              <a
-                href="tel:+74999940140"
-                className={`${styles.contactLink} ${styles.tooltipTarget}`}
-                data-tooltip="Позвонить в академию"
-              >
+              <a href="tel:+74999940140" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Позвонить в академию">
                 8 (499) 994-01-40
               </a>
             </li>
@@ -90,14 +85,10 @@ export function Footer() {
                 </svg>
               </span>
               <div>
-                <a
-                  href="tel:+79258899963"
-                  className={`${styles.contactLink} ${styles.tooltipTarget}`}
-                  data-tooltip="Viber / WhatsApp / Telegram"
-                >
+                <a href="tel:+79258899963" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Telegram / WhatsApp">
                   8 (925) 889-99-63
                 </a>
-                <span className={styles.contactHint}>&nbsp;Viber · WhatsApp · Telegram</span>
+                <span className={styles.contactHint}>&nbsp;Telegram · WhatsApp</span>
               </div>
             </li>
             <li>
@@ -107,11 +98,7 @@ export function Footer() {
                   <polyline points="22,6 12,13 2,6" />
                 </svg>
               </span>
-              <a
-                href="mailto:school@petsgroomer.ru"
-                className={`${styles.contactLink} ${styles.tooltipTarget}`}
-                data-tooltip="Написать на e-mail"
-              >
+              <a href="mailto:school@petsgroomer.ru" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Написать на e-mail">
                 school@petsgroomer.ru
               </a>
             </li>
@@ -180,10 +167,15 @@ export function Footer() {
 
       <div className={styles.bottom}>
         <div className={styles.bottomInner}>
-          <p className={styles.copy}>© 2009–{new Date().getFullYear()} Академия груминга Bonshery Groom. Все права защищены.</p>
-          <a href="https://www.petsgroomer.ru" className={styles.siteLink} target="_blank" rel="noopener noreferrer">petsgroomer.ru</a>
+          <p className={styles.copy}>© 2007–{new Date().getFullYear()} Академия груминга BONSHERY. Все права защищены.</p>
+          <div className={styles.legalLinks}>
+            <a href="/privacy" className={styles.legalLink}>Политика</a>
+            <a href="/terms" className={styles.legalLink}>Соглашение</a>
+            <a href="/offer" className={styles.legalLink}>Оферта</a>
+          </div>
         </div>
       </div>
     </footer>
   );
 }
+

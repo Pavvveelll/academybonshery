@@ -4,20 +4,10 @@ import { FormEvent, useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import { BrandLogoSvg } from "./BrandLogoSvg";
 
-const navItems = [
-  { label: "Основной курс", href: "#course" },
-  { label: "Форматы", href: "#formats" },
-  { label: "Ближайшие группы", href: "#enrollment" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Контакты", href: "#contacts" },
-];
-
-const tickerItems = [
-  { label: "Практика с первого дня", href: "#course" },
-  { label: "Поддержка после выпуска", href: "#contacts" },
-  { label: "Группы до 6 человек", href: "#enrollment" },
-  { label: "Сертификат академии", href: "#graduates" },
-  { label: "Гибкий график обучения", href: "#formats" },
+const heroTrustLine = [
+  { value: "20+", label: "лет опыта" },
+  { value: "5000+", label: "учеников" },
+  { value: "INT", label: "международные проекты" },
 ];
 
 export function Header() {
@@ -123,94 +113,64 @@ export function Header() {
                 <p className={styles.workTime}>ежедневно с 10.00 - 20.00</p>
               </div>
             </div>
-
-            <nav className={styles.navStrip}>
-              <ul className={styles.menu}>
-                {navItems.map((item) => (
-                  <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className={styles.tooltipTarget}
-                      data-tooltip={`Перейти: ${item.label}`}
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                type="button"
-                className={`${styles.signupButton} ${styles.tooltipTarget}`}
-                data-tooltip="Открыть форму быстрой записи"
-                onClick={() => setIsModalOpen(true)}
-              >
-                Записаться
-              </button>
-            </nav>
-          </div>
-
-          <div className={styles.infoTicker} aria-label="Преимущества академии">
-            <div className={styles.tickerLane}>
-              <div className={styles.tickerTrack}>
-                {tickerItems.map((item) => (
-                  <a
-                    className={`${styles.tickerItem} ${styles.tooltipTarget}`}
-                    href={item.href}
-                    key={`ticker-a-${item.label}`}
-                    data-tooltip={`Перейти: ${item.label}`}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-              <div className={styles.tickerTrack} aria-hidden="true">
-                {tickerItems.map((item) => (
-                  <a
-                    className={styles.tickerItem}
-                    href={item.href}
-                    key={`ticker-b-${item.label}`}
-                    tabIndex={-1}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
 
           <div className={styles.heroStage}>
-            <div className={styles.heroGlow} />
             <div className={styles.heroText}>
-              <p className={styles.heroKicker}>BONSHERY GROOM</p>
-              <h1 className={styles.heroTitle}>Старт ближайших потоков</h1>
+              <p className={styles.heroEyebrow}>Международная академия груминга BONSHERY · Основана в 2007 году</p>
+              <h1 className={styles.heroTitle}>
+                Профессия грумера как система
+                <br />
+                <span className={styles.heroTitleAccent}>от первого навыка до собственного бизнеса</span>
+              </h1>
               <p className={styles.heroDescription}>
-                Современная академия груминга с насыщенной практикой, гибкими форматами
-                обучения и поддержкой после выпуска.
+                Мы не продаём лёгкую профессию за 7 дней и не обещаем быстрые деньги.
+                Этот путь для тех, кто готов учиться, работать и выходить в профессию осознанно.
               </p>
+
               <div className={styles.heroActions}>
                 <button
                   type="button"
-                  className={`${styles.heroPrimary} ${styles.tooltipTarget}`}
-                  data-tooltip="Открыть форму записи на курс"
-                  onClick={() => setIsModalOpen(true)}
+                  className={styles.heroPrimary}
+                  onClick={() => {
+                    document.getElementById("quick-choice")?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
-                  Записаться на курс
+                  Курс с нуля
                 </button>
                 <a
-                  href="#course"
-                  className={`${styles.heroSecondary} ${styles.tooltipTarget}`}
-                  data-tooltip="Посмотреть программы и длительность"
+                  href="#growth"
+                  className={styles.heroSecondary}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById("growth")?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
-                  Программы обучения
+                  Мастер-классы
                 </a>
+                <button
+                  type="button"
+                  className={styles.heroGhost}
+                  onClick={() => setIsModalOpen(true)}
+                >
+                  Получить консультацию
+                </button>
+              </div>
+
+              <div className={styles.heroTrustRow}>
+                {heroTrustLine.map((item) => (
+                  <div key={item.label} className={styles.heroTrustItem}>
+                    <span className={styles.heroTrustValue}>{item.value}</span>
+                    <span className={styles.heroTrustLabel}>{item.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
             <div className={styles.heroMedia}>
               <img
                 src="/images/master-photo.jpg"
-                alt="Мастер Bonshery Groom с собакой"
+                alt="Живой процесс груминга в академии BONSHERY"
                 loading="lazy"
               />
             </div>
