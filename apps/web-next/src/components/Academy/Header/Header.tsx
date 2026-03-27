@@ -5,7 +5,11 @@ import styles from "./Header.module.css";
 import { BrandLogoSvg } from "./BrandLogoSvg";
 
 const heroTrustLine = [
+<<<<<<< HEAD
   { value: "20+", label: "лет опыта" },
+=======
+  { value: "20", label: "лет опыта" },
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
   { value: "5000+", label: "учеников" },
   { value: "INT", label: "международные проекты" },
 ];
@@ -99,7 +103,11 @@ export function Header() {
 
                 <div className={styles.titleBlock}>
                   <p className={styles.brandName}>BONSHERY GROOM</p>
+<<<<<<< HEAD
                   <p className={styles.brandSubtitle}>Академия груминга с 2009 года</p>
+=======
+                  <p className={styles.brandSubtitle}>Академия груминга</p>
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
                 </div>
               </div>
 
@@ -110,14 +118,24 @@ export function Header() {
                   8 (499) 994-01-40
                 </a>
                 <span className={styles.separator} aria-hidden="true" />
+<<<<<<< HEAD
                 <p className={styles.workTime}>ежедневно с 10.00 - 20.00</p>
+=======
+                <a className={styles.phone} href="tel:+79258899963">
+                  +7 (925) 889-99-63
+                </a>
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               </div>
             </div>
           </div>
 
           <div className={styles.heroStage}>
             <div className={styles.heroText}>
+<<<<<<< HEAD
               <p className={styles.heroEyebrow}>Международная академия груминга BONSHERY · Основана в 2007 году</p>
+=======
+              <p className={styles.heroEyebrow}>Международная академия груминга BONSHERY</p>
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               <h1 className={styles.heroTitle}>
                 Профессия грумера как система
                 <br />
@@ -138,15 +156,23 @@ export function Header() {
                 >
                   Курс с нуля
                 </button>
+<<<<<<< HEAD
                 <a
                   href="#growth"
                   className={styles.heroSecondary}
                   onClick={(e) => {
                     e.preventDefault();
+=======
+                <button
+                  type="button"
+                  className={styles.heroSecondary}
+                  onClick={() => {
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
                     document.getElementById("growth")?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   Мастер-классы
+<<<<<<< HEAD
                 </a>
                 <button
                   type="button"
@@ -155,6 +181,31 @@ export function Header() {
                 >
                   Получить консультацию
                 </button>
+=======
+                </button>
+                <button
+                  type="button"
+                  className={styles.heroSecondary}
+                  onClick={() => {
+                    document.getElementById("growth-program")?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Программа роста
+                </button>
+                <a
+                  href="https://t.me/maxbonshery"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.heroGhost}
+                >
+                  Получить консультацию
+                </a>
+              </div>
+
+              {/* Баннер с ближайшими датами курса */}
+              <div className={styles.courseBanner}>
+                <strong>Ближайшие даты курса:</strong> 5 апреля, 20 мая, 10 июня
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               </div>
 
               <div className={styles.heroTrustRow}>
@@ -167,6 +218,7 @@ export function Header() {
               </div>
             </div>
 
+<<<<<<< HEAD
             <div className={styles.heroMedia}>
               <img
                 src="/images/master-photo.jpg"
@@ -174,6 +226,9 @@ export function Header() {
                 loading="lazy"
               />
             </div>
+=======
+            {/* Фото удалено по требованию */}
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
           </div>
 
           {isModalOpen && (

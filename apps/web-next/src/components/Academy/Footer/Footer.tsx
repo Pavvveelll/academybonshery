@@ -77,6 +77,7 @@ export function Footer() {
               <a href="tel:+74999940140" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Позвонить в академию">
                 8 (499) 994-01-40
               </a>
+<<<<<<< HEAD
             </li>
             <li>
               <span className={styles.contactIcon} aria-hidden="true">
@@ -90,6 +91,12 @@ export function Footer() {
                 </a>
                 <span className={styles.contactHint}>&nbsp;Telegram · WhatsApp</span>
               </div>
+=======
+              <a href="tel:+79258899963" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Telegram / WhatsApp">
+                8 (925) 889-99-63
+              </a>
+              <span className={styles.contactHint}>&nbsp;Telegram · WhatsApp</span>
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
             </li>
             <li>
               <span className={styles.contactIcon} aria-hidden="true">
@@ -154,6 +161,7 @@ export function Footer() {
             ))}
           </ul>
 
+<<<<<<< HEAD
           <div className={styles.payments}>
             <p className={styles.payTitle}>Принимаем к оплате</p>
             <div className={styles.payBadges}>
@@ -162,6 +170,9 @@ export function Footer() {
               <span className={`${styles.payBadge} ${styles.tooltipTarget}`} data-tooltip="Национальная платёжная система">МИР</span>
             </div>
           </div>
+=======
+          {/* payments block удалён по запросу */}
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
         </div>
       </div>
 

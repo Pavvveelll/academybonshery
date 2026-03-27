@@ -11,8 +11,11 @@ import { GraduateVideo } from "@/components/Academy/GraduateVideo/GraduateVideo"
 import { OpenDoors } from "@/components/Academy/OpenDoors/OpenDoors";
 import { FranchiseSection } from "@/components/Academy/FranchiseSection/FranchiseSection";
 import { FinalCTA } from "@/components/Academy/FinalCTA/FinalCTA";
+<<<<<<< HEAD
 import { FAQ } from "@/components/Academy/FAQ/FAQ";
 import { WeekendCourse } from "@/components/Academy/WeekendCourse/WeekendCourse";
+=======
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 import { Contacts } from "@/components/Academy/Contacts/Contacts";
 import { Subscribe } from "@/components/Academy/Subscribe/Subscribe";
 import { InteractiveMenu } from "@/components/Academy/InteractiveMenu/InteractiveMenu";
@@ -41,8 +44,13 @@ export default function Home() {
             <OpenDoors />
             <FranchiseSection />
             <FinalCTA />
+<<<<<<< HEAD
             <FAQ />
             <WeekendCourse />
+=======
+            {/* <FAQ /> */}
+            {/* <WeekendCourse /> */}
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
             <Contacts />
             <Subscribe />
           </main>

@@ -13,20 +13,44 @@
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 64px;
+<<<<<<< HEAD
   align-items: center;
 }
 
+=======
+  align-items: stretch;
+  min-height: 480px;
+}
+
+
+
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 .photo {
   border-radius: var(--card-radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+<<<<<<< HEAD
+=======
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }
 
 .photo img {
   width: 100%;
+<<<<<<< HEAD
   display: block;
   aspect-ratio: 3 / 4;
   object-fit: cover;
+=======
+  height: auto;
+  display: block;
+  object-fit: contain;
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }
 
 .kicker {
@@ -55,10 +79,31 @@
 }
 
 @media (max-width: 900px) {
+<<<<<<< HEAD
   .inner { grid-template-columns: 1fr; gap: 40px; }
   .photo { max-width: 360px; }
 }
 
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
+=======
+  .inner { grid-template-columns: 1fr; gap: 40px; min-height: 0; }
+  .photo {
+    max-width: 100%;
+    width: 100%;
+    min-height: 220px;
+  }
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 10px; }
+  .photo, .photo img {
+    width: 100%;
+    max-width: 100%;
+  }
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }

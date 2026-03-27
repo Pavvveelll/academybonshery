@@ -1,9 +1,528 @@
+<<<<<<< HEAD
+=======
+/* SUPPORT BLOCK */
+.blockSupport {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: #f8f6f3;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  margin: 24px 0 0 0;
+  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
+}
+.supportIcon {
+  font-size: 2.8rem;
+  margin-right: 0.5rem;
+  color: var(--color-accent-gold);
+  flex: 0 0 56px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Prevent horizontal overflow for the component containers */
+/* Note: avoid global :global(html) selectors inside CSS Modules to prevent build errors. */
+/* Use container/section overflow rules below instead. */
+
+/* Ensure blocks never exceed their container width */
+.block, .section {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* COMPARE BLOCK */
+.blockCompare {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  margin: 24px 0 0 0;
+  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
+}
+.compareGrid {
+  display: flex;
+  gap: 2.2rem;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.compareCard {
+  background: #f8f6f3;
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  flex: 1 1 220px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(60,64,74,0.04);
+  border: 1.5px solid #f0ece7;
+}
+.compareIcon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.compareKeyMark {
+  color: var(--color-accent-brown-strong);
+  font-weight: 700;
+}
+
+/* CHOOSE BLOCK */
+.blockChoose {
+  background: #f8f6f3;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  margin: 24px 0 0 0;
+  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
+}
+.chooseGrid {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+}
+.chooseCol {
+  flex: 1 1 220px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(60,64,74,0.04);
+  border: 1.5px solid #f0ece7;
+}
+.chooseIcon {
+  font-size: 2rem;
+}
+.chooseText {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+}
+
+/* FINAL BLOCK */
+.blockFinal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  margin: 24px 0 0 0;
+  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
+}
+.finalIcon {
+  font-size: 2.8rem;
+  margin-right: 0.5rem;
+  color: var(--color-accent-gold);
+  flex: 0 0 56px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* DATES BLOCK */
+.blockDates {
+  background: #f8f6f3;
+  border-radius: 12px;
+  padding: 1rem 1rem 0.8rem 1rem;
+  margin: 24px 0 0 0;
+  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
+}
+.datesCardIcon {
+  font-size: 1.7rem;
+  margin-bottom: 0.2rem;
+}
+
+@media (max-width: 900px) {
+  .blockSupport, .blockCompare, .blockChoose, .blockFinal, .blockDates {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.1rem 0.7rem 0.7rem 0.7rem;
+  }
+  .supportIcon, .finalIcon { font-size: 2rem; }
+  .compareGrid, .chooseGrid { flex-direction: column; gap: 1.2rem; }
+}
+.coursesPhoto {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #f5f5f5;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border: 3px solid var(--color-accent-gold);
+}
+.block {
+  margin: 20px 0 0 0;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #f0ece7;
+}
+.blockTitle {
+  margin-top: 0.6rem;
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.9rem, 3.2vw, 2.4rem);
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.blockSubTitle {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.05rem;
+  color: var(--color-accent-brown-strong);
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  padding: 0.5rem 0.8rem;
+  border-left: 6px solid var(--color-accent-gold);
+  background: #fbf7f2; /* subtle band to span whole block */
+  border-radius: 8px;
+  align-items: center;
+}
+.blockText {
+  font-size: 1.13rem;
+  margin-bottom: 14px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 68ch; /* improve measure for readability */
+}
+.coursesWrap {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.coursesTextWrap {
+  flex: 1 1 0%;
+  min-width: 220px;
+  max-width: 760px; /* ограничиваем ширину текстовой колонки для более гармоничного ритма */
+}
+.coursesCards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* карточки выравниваются по левой границе текстовой колонки */
+  margin-bottom: 20px;
+  width: 100%;
+}
+.courseCard {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px rgba(60,64,74,0.09);
+  padding: 1.1rem 1.2rem;
+  flex: 1 1 calc(50% - 1rem); /* две колонки на большом экране */
+  min-width: 0; /* allow shrinking on small screens */
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1.5px solid #f0ece7;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.courseCard:hover {
+  box-shadow: 0 12px 40px rgba(60,64,74,0.14);
+  border: 1.5px solid var(--color-accent-gold);
+  transform: translateY(-6px);
+}
+.courseCard:focus-within {
+  box-shadow: 0 10px 36px rgba(60,64,74,0.12);
+  border-color: var(--color-accent-gold);
+}
+.courseCardTitle {
+  font-size: 1.12rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--color-accent-brown-strong);
+}
+.courseCardDesc {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+.courseList {
+  margin: 0 0 0.7rem 1.1rem;
+  padding-left: 0.7rem;
+  font-size: 1.01rem;
+  color: var(--color-text-secondary);
+  list-style: disc;
+}
+.courseResult {
+  font-size: 1.01rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+.courseFor {
+  font-size: 0.99rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+.courseBtn, .datesCardBtn, .ctaBtns a, .finalBtns a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  font-weight: 600;
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--color-accent-gold);
+  color: #fff;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.courseCard .courseBtn,
+.courseCard .courseBtnAlt {
+  margin-top: auto; /* push button to bottom so all buttons align */
+}
+.courseBtn:hover, .datesCardBtn:hover, .ctaBtns a:hover, .finalBtns a:hover {
+  background: var(--color-accent-gold-strong);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(198,169,107,0.18);
+}
+.courseBtnAlt, .datesCardBtnAlt {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-accent-gold);
+  border: 1.5px solid var(--color-accent-gold);
+  border-radius: 10px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.3rem;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.05rem;
+}
+.courseBtnAlt:hover, .datesCardBtnAlt:hover {
+  background: var(--color-accent-gold);
+  color: #fff;
+}
+.supportList, .masterList, .compareList {
+  margin: 0 0 0.7rem 1.1rem;
+  font-size: 1.01rem;
+  color: var(--color-text-secondary);
+  list-style: disc;
+}
+.supportPhrase {
+  font-size: 1.09rem;
+  color: var(--color-accent-brown-strong);
+  margin-top: 0.9rem;
+  font-weight: 600;
+}
+.compareWrap {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+/* small entrance animation for sections */
+@keyframes fadeRiseSmall {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.block, .coursesCards, .datesCards, .compareWrap {
+  animation: fadeRiseSmall 0.45s ease both;
+}
+
+/* improve kicker/subtle labels */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  border: 1px solid var(--color-border-soft);
+  font-weight: 600;
+  color: var(--color-accent-brown);
+  font-size: 0.9rem;
+}
+
+/* Accordion */
+.accordion {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+.accordionItem {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-border-soft);
+  background: var(--color-surface);
+}
+.accordionButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+.accordionButton:focus { outline: 3px solid color-mix(in srgb, var(--color-accent-gold) 20%, transparent); }
+.accordionMarker { font-weight: 700; color: var(--color-accent-brown); }
+.accordionPanel {
+  padding: 0.9rem 1rem 1.1rem 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* compact master list */
+.masterList { margin: 0.4rem 0 0 1.1rem; padding-left: 0.7rem; color: var(--color-text-secondary); line-height: 1.6; }
+
+.compareCol {
+  flex: 1 1 220px;
+  min-width: 180px;
+  background: #f8f6f3;
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+}
+.compareTitle {
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--color-accent-gold);
+}
+.compareKeyText {
+  font-size: 1.09rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+.finalBtns, .datesBtns, .ctaBtns {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 0.8rem;
+}
+.datesSubTitle {
+  font-size: 1.13rem;
+  color: var(--color-accent-gold);
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+}
+.datesCards {
+  display: flex;
+  gap: 2.2rem;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.datesCard {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60,64,74,0.09);
+  padding: 1.4rem 1.6rem;
+  flex: 1 1 240px;
+  min-width: 180px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border: 1.5px solid #f0ece7;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.datesCard:hover {
+  box-shadow: 0 8px 32px rgba(60,64,74,0.13);
+  border: 1.5px solid var(--color-accent-gold);
+}
+.datesCardTitle {
+  font-size: 1.13rem;
+  font-weight: 700;
+  color: var(--color-accent-brown-strong);
+}
+.datesCardDate {
+  font-size: 1.01rem;
+  color: var(--color-accent-gold);
+}
+.datesCardFormat {
+  font-size: 0.99rem;
+  color: var(--color-text-secondary);
+}
+.datesNote {
+  font-size: 1.01rem;
+  color: var(--color-accent-brown-strong);
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+}
+.masterFor {
+  font-size: 1.01rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.7rem;
+}
+@media (max-width: 900px) {
+  .coursesWrap, .coursesCards, .compareWrap, .datesCards, .finalBtns, .datesBtns, .ctaBtns {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+  .blockTitle { font-size: 1.4rem; }
+  .block { margin: 18px 0 0 0; }
+  .coursesPhoto { width: 120px; height: 120px; }
+  .courseCard, .datesCard { padding: 0.9rem 0.9rem; }
+  .courseBtn, .datesCardBtn { width: 100%; text-align: center; }
+  .coursesCards { justify-content: center; }
+}
+.flexWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.photoWrap {
+  flex: 0 0 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+/* make images responsive and never overflow their container */
+.photo, .coursesPhoto {
+  max-width: 100%;
+  height: auto;
+}
+
+.contentWrap {
+  flex: 1 1 0%;
+}
+
+@media (max-width: 900px) {
+  .flexWrap {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .photoWrap {
+    margin-bottom: 1.2rem;
+  }
+  .photo {
+    width: 140px;
+    height: 140px;
+  }
+}
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 .section {
   padding: var(--section-padding) 0;
   background: var(--color-surface-strong);
 }
 
 .container {
+<<<<<<< HEAD
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 80px;
@@ -17,6 +536,27 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-accent-gold);
+=======
+  width: min(72rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (max-width: 700px) {
+  .coursesCards { gap: 1.1rem; }
+  .courseCard { max-width: 100%; }
+  .container { padding: 0 16px; }
+}
+
+.kicker {
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-soft);
+  padding: 0.25rem 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent-brown);
+  background: var(--color-surface);
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }
 
 .title {

@@ -13,7 +13,10 @@ const menuItems = [
   { label: "Отзывы", href: "#graduates" },
   { label: "День открытых дверей", href: "#open-doors" },
   { label: "Франшиза", href: "#franchise" },
+<<<<<<< HEAD
   { label: "FAQ", href: "#faq" },
+=======
+>>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
   { label: "Контакты", href: "#contacts" },
 ];
 
