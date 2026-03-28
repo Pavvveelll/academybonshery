@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { IBM_Plex_Sans, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 
 const bodyFont = IBM_Plex_Sans({
