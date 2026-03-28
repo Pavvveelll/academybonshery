@@ -42,8 +42,6 @@ export default function Home() {
             <FranchiseSection />
             <FinalCTA />
             <FAQ />
-            <WeekendCourse />
-            <Contacts />
             <Subscribe />
           </main>
         </div>
