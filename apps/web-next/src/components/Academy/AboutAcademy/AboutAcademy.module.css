@@ -1,45 +1,5 @@
-<<<<<<< HEAD
-=======
 /* SUPPORT BLOCK */
-.blockSupport {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.2rem;
-  background: #f8f6f3;
-  border-radius: 12px;
-  padding: 1rem 1rem 0.8rem 1rem;
-  margin: 24px 0 0 0;
-  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
-}
-.supportIcon {
-  font-size: 2.8rem;
-  margin-right: 0.5rem;
-  color: var(--color-accent-gold);
-  flex: 0 0 56px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-/* Prevent horizontal overflow for the component containers */
-/* Note: avoid global :global(html) selectors inside CSS Modules to prevent build errors. */
-/* Use container/section overflow rules below instead. */
-
-/* Ensure blocks never exceed their container width */
-.block, .section {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* COMPARE BLOCK */
-.blockCompare {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1rem 1rem 0.8rem 1rem;
-  margin: 24px 0 0 0;
-  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
-}
+/* Удалена дублирующаяся .blockSupport */
 .compareGrid {
   display: flex;
   gap: 2.2rem;
@@ -66,20 +26,6 @@
   color: var(--color-accent-brown-strong);
   font-weight: 700;
 }
-
-/* CHOOSE BLOCK */
-.blockChoose {
-  background: #f8f6f3;
-  border-radius: 12px;
-  padding: 1rem 1rem 0.8rem 1rem;
-  margin: 24px 0 0 0;
-  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
-}
-.chooseGrid {
-  display: flex;
-  gap: 2.2rem;
-  flex-wrap: wrap;
-}
 .chooseCol {
   flex: 1 1 220px;
   min-width: 180px;
@@ -95,63 +41,18 @@
 .chooseIcon {
   font-size: 2rem;
 }
-.chooseText {
-  font-size: 1.05rem;
-  color: var(--color-text-secondary);
-}
-
-/* FINAL BLOCK */
-.blockFinal {
+/* SUPPORT BLOCK */
+.blockSupport {
   display: flex;
   align-items: flex-start;
   gap: 1.2rem;
-  background: #fff;
-  border-radius: 12px;
-  padding: 1rem 1rem 0.8rem 1rem;
-  margin: 24px 0 0 0;
-  box-shadow: 0 2px 12px rgba(60,64,74,0.05);
-}
-.finalIcon {
-  font-size: 2.8rem;
-  margin-right: 0.5rem;
-  color: var(--color-accent-gold);
-  flex: 0 0 56px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-/* DATES BLOCK */
-.blockDates {
   background: #f8f6f3;
   border-radius: 12px;
   padding: 1rem 1rem 0.8rem 1rem;
   margin: 24px 0 0 0;
   box-shadow: 0 2px 12px rgba(60,64,74,0.05);
 }
-.datesCardIcon {
-  font-size: 1.7rem;
-  margin-bottom: 0.2rem;
-}
-
-@media (max-width: 900px) {
-  .blockSupport, .blockCompare, .blockChoose, .blockFinal, .blockDates {
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 1.1rem 0.7rem 0.7rem 0.7rem;
-  }
-  .supportIcon, .finalIcon { font-size: 2rem; }
-  .compareGrid, .chooseGrid { flex-direction: column; gap: 1.2rem; }
-}
-.coursesPhoto {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  background: #f5f5f5;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-  border: 3px solid var(--color-accent-gold);
-}
+/* Удалён фрагмент без селектора */
 .block {
   margin: 20px 0 0 0;
   padding: 0 0 12px 0;
@@ -247,59 +148,33 @@
   list-style: disc;
 }
 .courseResult {
-  font-size: 1.01rem;
-  color: var(--color-accent-gold);
-  margin-bottom: 0.2rem;
-  font-weight: 600;
+	font-size: 1.01rem;
+	color: var(--color-accent-gold);
+	margin-bottom: 0.2rem;
+	font-weight: 600;
 }
-.courseFor {
-  font-size: 0.99rem;
-  color: var(--color-text-secondary);
-  margin-bottom: 0.5rem;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+  width: min(72rem, calc(100% - 2rem));
 }
-.courseBtn, .datesCardBtn, .ctaBtns a, .finalBtns a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--btn-height);
-  padding: var(--btn-padding);
-  font-size: var(--btn-font-size);
-  font-weight: 600;
-  border-radius: var(--btn-radius);
-  cursor: pointer;
-  text-decoration: none;
-  background: var(--color-accent-gold);
-  color: #fff;
-  border: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-}
-.courseCard .courseBtn,
-.courseCard .courseBtnAlt {
-  margin-top: auto; /* push button to bottom so all buttons align */
-}
-.courseBtn:hover, .datesCardBtn:hover, .ctaBtns a:hover, .finalBtns a:hover {
-  background: var(--color-accent-gold-strong);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(198,169,107,0.18);
-}
-.courseBtnAlt, .datesCardBtnAlt {
-  display: inline-block;
-  background: #fff;
-  color: var(--color-accent-gold);
-  border: 1.5px solid var(--color-accent-gold);
-  border-radius: 10px;
-  padding: 0.7rem 1.4rem;
+
+  margin: 0 0 16px;
+  font-size: 0.78rem;
   font-weight: 700;
-  text-decoration: none;
-  margin-top: 0.3rem;
-  transition: background 0.2s, color 0.2s;
-  font-size: 1.05rem;
-}
-.courseBtnAlt:hover, .datesCardBtnAlt:hover {
-  background: var(--color-accent-gold);
-  color: #fff;
-}
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-gold);
+  display: inline-flex;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-soft);
+  padding: 0.25rem 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent-brown);
+  background: var(--color-surface);
 .supportList, .masterList, .compareList {
   margin: 0 0 0.7rem 1.1rem;
   font-size: 1.01rem;
@@ -403,16 +278,10 @@
   margin-top: 0.8rem;
 }
 .datesSubTitle {
-  font-size: 1.13rem;
+  font-size: 1.01rem;
   color: var(--color-accent-gold);
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.2rem;
   font-weight: 600;
-}
-.datesCards {
-  display: flex;
-  gap: 2.2rem;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
 }
 .datesCard {
   background: #fff;
@@ -514,49 +383,15 @@
     width: 140px;
     height: 140px;
   }
-}
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
-.section {
-  padding: var(--section-padding) 0;
-  background: var(--color-surface-strong);
-}
-
-.container {
-<<<<<<< HEAD
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 80px;
-  max-width: 860px;
-}
-
-.kicker {
-  margin: 0 0 16px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-accent-gold);
-=======
-  width: min(72rem, calc(100% - 2rem));
-  margin: 0 auto;
-  padding: 0 1rem;
+  .section {
+    padding: var(--section-padding) 0;
+    background: var(--color-surface-strong);
+  }
 }
 @media (max-width: 700px) {
   .coursesCards { gap: 1.1rem; }
   .courseCard { max-width: 100%; }
   .container { padding: 0 16px; }
-}
-
-.kicker {
-  display: inline-flex;
-  border-radius: 999px;
-  border: 1px solid var(--color-border-soft);
-  padding: 0.25rem 0.875rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-accent-brown);
-  background: var(--color-surface);
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }
 
 .title {

@@ -88,10 +88,7 @@ export function GraduateVideo() {
     <section id="graduates" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.head}>
-<<<<<<< HEAD
           <p className={styles.kicker}>Социальное доказательство</p>
-=======
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
           <h2 className={styles.title}>Отзывы с подтверждением результата</h2>
           <p className={styles.subtitle}>
             Коротко и по фактам: что получил человек после обучения или услуги.

@@ -5,11 +5,7 @@ import styles from "./Header.module.css";
 import { BrandLogoSvg } from "./BrandLogoSvg";
 
 const heroTrustLine = [
-<<<<<<< HEAD
-  { value: "20+", label: "лет опыта" },
-=======
   { value: "20", label: "лет опыта" },
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
   { value: "5000+", label: "учеников" },
   { value: "INT", label: "международные проекты" },
 ];
@@ -38,47 +34,37 @@ export function Header() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-
     const form = event.currentTarget;
     const formData = new FormData(form);
-
     const name = String(formData.get("name") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
-
     if (!name || !phone) {
       setFormStatus("error");
       setFormMessage("Пожалуйста, заполните имя и телефон.");
       return;
     }
-
     setIsSending(true);
     setFormStatus("idle");
     setFormMessage("");
-
     try {
       const response = await fetch("/api/telegram-lead", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, phone, message }),
       });
-
       if (!response.ok) {
         throw new Error("Send failed");
       }
-
       setFormStatus("success");
       setFormMessage("Спасибо за обращение, мы свяжемся с вами в ближайшее время.");
       form.reset();
-
       setTimeout(() => {
         setIsModalOpen(false);
         setFormStatus("idle");
         setFormMessage("");
       }, 1200);
-    } catch {
+    } catch (e) {
       setFormStatus("error");
       setFormMessage("Анкета не отправлена. Попробуйте позже.");
     } finally {
@@ -93,49 +79,28 @@ export function Header() {
           <div className={styles.headerTop}>
             <div className={styles.banner}>
               <div className={styles.shine} />
-
               <div className={styles.bannerTop}>
                 <div className={styles.brandCluster}>
                   <div className={styles.logoWrap}>
                     <BrandLogoSvg className={styles.logoSvg} />
                   </div>
                 </div>
-
                 <div className={styles.titleBlock}>
                   <p className={styles.brandName}>BONSHERY GROOM</p>
-<<<<<<< HEAD
-                  <p className={styles.brandSubtitle}>Академия груминга с 2009 года</p>
-=======
                   <p className={styles.brandSubtitle}>Академия груминга</p>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
                 </div>
               </div>
-
               <div className={styles.goldLine} />
-
               <div className={styles.bannerBottom}>
-                <a className={styles.phone} href="tel:+74999940140">
-                  8 (499) 994-01-40
-                </a>
-                <span className={styles.separator} aria-hidden="true" />
-<<<<<<< HEAD
-                <p className={styles.workTime}>ежедневно с 10.00 - 20.00</p>
-=======
                 <a className={styles.phone} href="tel:+79258899963">
                   +7 (925) 889-99-63
                 </a>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               </div>
             </div>
           </div>
-
           <div className={styles.heroStage}>
             <div className={styles.heroText}>
-<<<<<<< HEAD
-              <p className={styles.heroEyebrow}>Международная академия груминга BONSHERY · Основана в 2007 году</p>
-=======
               <p className={styles.heroEyebrow}>Международная академия груминга BONSHERY</p>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               <h1 className={styles.heroTitle}>
                 Профессия грумера как система
                 <br />
@@ -145,7 +110,6 @@ export function Header() {
                 Мы не продаём лёгкую профессию за 7 дней и не обещаем быстрые деньги.
                 Этот путь для тех, кто готов учиться, работать и выходить в профессию осознанно.
               </p>
-
               <div className={styles.heroActions}>
                 <button
                   type="button"
@@ -156,32 +120,14 @@ export function Header() {
                 >
                   Курс с нуля
                 </button>
-<<<<<<< HEAD
-                <a
-                  href="#growth"
-                  className={styles.heroSecondary}
-                  onClick={(e) => {
-                    e.preventDefault();
-=======
                 <button
                   type="button"
                   className={styles.heroSecondary}
                   onClick={() => {
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
                     document.getElementById("growth")?.scrollIntoView({ behavior: "smooth" });
                   }}
                 >
                   Мастер-классы
-<<<<<<< HEAD
-                </a>
-                <button
-                  type="button"
-                  className={styles.heroGhost}
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Получить консультацию
-                </button>
-=======
                 </button>
                 <button
                   type="button"
@@ -201,13 +147,10 @@ export function Header() {
                   Получить консультацию
                 </a>
               </div>
-
               {/* Баннер с ближайшими датами курса */}
               <div className={styles.courseBanner}>
                 <strong>Ближайшие даты курса:</strong> 5 апреля, 20 мая, 10 июня
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               </div>
-
               <div className={styles.heroTrustRow}>
                 {heroTrustLine.map((item) => (
                   <div key={item.label} className={styles.heroTrustItem}>
@@ -217,20 +160,8 @@ export function Header() {
                 ))}
               </div>
             </div>
-
-<<<<<<< HEAD
-            <div className={styles.heroMedia}>
-              <img
-                src="/images/master-photo.jpg"
-                alt="Живой процесс груминга в академии BONSHERY"
-                loading="lazy"
-              />
-            </div>
-=======
             {/* Фото удалено по требованию */}
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
           </div>
-
           {isModalOpen && (
             <div className={styles.modalOverlay} onClick={() => setIsModalOpen(false)}>
               <div className={styles.modalCard} onClick={(event) => event.stopPropagation()}>
@@ -238,36 +169,37 @@ export function Header() {
                   type="button"
                   className={styles.modalClose}
                   onClick={() => setIsModalOpen(false)}
-                  aria-label="Закрыть окно"
                 >
                   ×
                 </button>
-
-                <h3 className={styles.modalTitle}>Запись на курс</h3>
-                <p className={styles.modalText}>
-                  Оставьте контакты, и мы перезвоним вам в ближайшее время.
-                </p>
-
                 <form className={styles.modalForm} onSubmit={handleSubmit}>
-                  <label className={styles.modalField}>
-                    <span>Имя</span>
-                    <input name="name" type="text" placeholder="Ваше имя" required />
-                  </label>
-
-                  <label className={styles.modalField}>
-                    <span>Телефон</span>
-                    <input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
-                  </label>
-
-                  <label className={styles.modalField}>
-                    <span>Комментарий</span>
-                    <textarea name="message" rows={4} placeholder="Например: интересует интенсив" />
-                  </label>
-
-                  <button className={styles.modalSubmit} type="submit" disabled={isSending}>
-                    {isSending ? "Отправка..." : "Перезвоните мне"}
+                  <h2 className={styles.modalTitle}>Получить консультацию</h2>
+                  <input
+                    className={styles.modalInput}
+                    name="name"
+                    type="text"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                  <input
+                    className={styles.modalInput}
+                    name="phone"
+                    type="tel"
+                    placeholder="Телефон"
+                    required
+                  />
+                  <textarea
+                    className={styles.modalTextarea}
+                    name="message"
+                    placeholder="Комментарий (необязательно)"
+                  />
+                  <button
+                    className={styles.modalSubmit}
+                    type="submit"
+                    disabled={isSending}
+                  >
+                    {isSending ? "Отправка..." : "Отправить"}
                   </button>
-
                   {formStatus !== "idle" && (
                     <p className={formStatus === "success" ? styles.modalSuccess : styles.modalError}>
                       {formMessage}

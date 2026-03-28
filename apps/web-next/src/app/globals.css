@@ -45,11 +45,7 @@
   --card-shadow: 0 10px 30px rgba(0,0,0,0.05);
 
   /* Секции */
-<<<<<<< HEAD
   --section-padding: 100px;
-=======
-  --section-padding: 80px;
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 
   /* Навигация */
   --nav-height: 80px;
@@ -75,8 +71,6 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
-<<<<<<< HEAD
-=======
   overflow-x: hidden;
 }
 
@@ -84,7 +78,6 @@ body {
   :root {
     --section-padding: 40px;
   }
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 }
 
 /* Глобальные стили секций */

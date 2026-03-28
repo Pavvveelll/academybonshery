@@ -27,16 +27,6 @@ export function Subscribe() {
     <section id="subscribe" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
-<<<<<<< HEAD
-          <p className={styles.kicker}>БЕСПЛАТНО</p>
-          <h2 className={styles.title}>Получите разбор ошибок грумеров</h2>
-          <p className={styles.desc}>
-            Материалы, которые помогут быстрее начать работать и избежать типичных ошибок в профессии.
-          </p>
-          {status === "done" ? (
-            <p className={styles.success}>
-              Отправлено! Мы свяжемся с вами в ближайшее время.
-=======
           <h2 className={styles.title}>Будьте в курсе событий академии</h2>
           <p className={styles.desc}>
             Подпишитесь, чтобы первыми узнавать<br />
@@ -47,7 +37,6 @@ export function Subscribe() {
           {status === "done" ? (
             <p className={styles.success}>
               Спасибо за подписку! Теперь вы будете получать только важные обновления и анонсы.
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
             </p>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
@@ -64,22 +53,14 @@ export function Subscribe() {
                 type="submit"
                 disabled={status === "sending"}
               >
-<<<<<<< HEAD
-                {status === "sending" ? "Отправляем…" : "Получить"}
-=======
                 {status === "sending" ? "Отправляем…" : "Подписаться"}
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
               </button>
             </form>
           )}
           {status === "error" && (
             <p className={styles.errorMsg}>Ошибка. Попробуйте ещё раз.</p>
           )}
-<<<<<<< HEAD
-          <p className={styles.note}>Нажимая «Получить», вы соглашаетесь с политикой конфиденциальности.</p>
-=======
           <p className={styles.note}>Только важные обновления и анонсы</p>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
         </div>
       </div>
     </section>

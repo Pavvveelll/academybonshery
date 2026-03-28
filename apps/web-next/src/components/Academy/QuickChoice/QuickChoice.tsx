@@ -13,15 +13,12 @@ const choices = [
     desc: "Повышение уровня и качества работы",
     href: "#growth",
   },
-<<<<<<< HEAD
-=======
   {
     id: "growth-program",
     title: "Программа роста",
     desc: "Профессиональное развитие и новые горизонты",
     href: "#growth-program",
   },
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
 ];
 
 export function QuickChoice() {

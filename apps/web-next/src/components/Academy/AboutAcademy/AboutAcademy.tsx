@@ -1,34 +1,16 @@
 import styles from "./AboutAcademy.module.css";
-<<<<<<< HEAD
-
-export function AboutAcademy() {
-  return (
-    <section id="about" className={styles.section}>
-      <div className={styles.container}>
-        <p className={styles.kicker}>О АКАДЕМИИ</p>
-        <h2 className={styles.title}>Система профессионального входа в индустрию</h2>
-        <p className={styles.text}>
-          BONSHERY — международная академия груминга, в которой формируется не просто навык,
-          а профессиональное мышление специалиста. Здесь вы учитесь понимать, чувствовать
-          и работать на уровне, за который готовы платить клиенты.
-        </p>
-        <p className={styles.text}>
-          Мы создаём среду, в которой ученики растут быстрее, потому что находятся внутри
-          реальной индустрии, а не учебной имитации.
-        </p>
-=======
 import AboutAccordion from "./AboutAccordion";
 
 export function AboutAcademy() {
   return (
-  <section id="about" className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.flexWrap}>
           <div className={styles.photoWrap}>
             <img src="/img/image-1774391833091.png" alt="Основатель академии" className={styles.photo} />
           </div>
           <div className={styles.contentWrap}>
-            <p className={styles.kicker}>Об академии</p>
+            <p className={styles.kicker}>О АКАДЕМИИ</p>
             <h2 className={styles.title}>Система профессионального входа в индустрию</h2>
             <p className={styles.text}>
               BONSHERY — международная академия груминга, в которой формируется не просто навык,
@@ -41,7 +23,6 @@ export function AboutAcademy() {
             </p>
           </div>
         </div>
-
         {/* КУРСЫ С НУЛЯ */}
         <section id="courses" className={styles.block}>
           <h2 className={styles.blockTitle}>Курсы с нуля: системный вход в профессию грумера</h2>
@@ -84,7 +65,6 @@ export function AboutAcademy() {
             </div>
           </div>
         </section>
-
         {/* БЛОК ПОДДЕРЖКИ */}
         <section id="support" className={styles.block}>
           <div className={styles.supportIcon}></div>
@@ -101,7 +81,6 @@ export function AboutAcademy() {
             <div className={styles.supportPhrase}>Мы не отпускаем вас после обучения — мы сопровождаем вас до результата</div>
           </div>
         </section>
-
         {/* БЛОК СРАВНЕНИЯ */}
         <section id="compare" className={styles.block}>
           <h3 className={styles.blockTitle}>В чём разница между курсами</h3>
@@ -130,7 +109,6 @@ export function AboutAcademy() {
           <div className={styles.compareKeyText}><b>Разница не в информации</b><br/>Разница в количестве практики и уровне уверенности, с которым вы выходите</div>
           <div className={styles.compareKeyText}><span className={styles.compareKeyMark}>👉 7 дней — вы понимаете</span><br/><span className={styles.compareKeyMark}>👉 10 дней — вы уже делаете</span></div>
         </section>
-
         {/* БЛОК ВЫБОРА */}
         <section id="choose" className={styles.block}>
           <h3 className={styles.blockTitle}>Какой курс выбрать</h3>
@@ -145,7 +123,6 @@ export function AboutAcademy() {
             </div>
           </div>
         </section>
-
         {/* ФИНАЛЬНЫЙ ДОЖИМ */}
         <section id="start-now" className={styles.block}>
           <div className={styles.finalIcon}></div>
@@ -158,7 +135,6 @@ export function AboutAcademy() {
             </div>
           </div>
         </section>
-
         {/* БАННЕР С ДАТАМИ */}
         <section id="dates" className={styles.block}>
           <h3 className={styles.blockTitle}>Ближайшая запись на курсы</h3>
@@ -185,32 +161,27 @@ export function AboutAcademy() {
             <a href="#contacts" className={styles.datesCardBtnAlt}>Получить консультацию</a>
           </div>
         </section>
-
         {/* МАСТЕР-КЛАССЫ */}
         <section id="masterclasses" className={styles.block}>
           <h2 className={styles.blockTitle}>Мастер-классы: рост уровня и работа в профессиональной среде</h2>
           <div className={styles.blockSubTitle}>Обучение для мастеров, которые хотят выйти на следующий уровень и работать на уровне индустрии</div>
           <AboutAccordion />
         </section>
-
         {/* МЕЖДУНАРОДНЫЙ АКЦЕНТ */}
         <section id="international-accent" className={styles.block}>
           <h3 className={styles.blockTitle}>Международный опыт</h3>
           <p className={styles.blockText}>На площадке BONSHERY проходят мастер-классы с участием ведущих грумеров из разных стран<br/>Вы обучаетесь у специалистов, которые формируют индустрию<br/>И работаете в среде, где задаются стандарты качества</p>
           <div className={styles.masterFor}>Кому подойдёт:<br/>— действующим мастерам<br/>— выпускникам курсов<br/>— тем, кто хочет расти<br/>— тем, кто хочет повысить чек</div>
         </section>
-
         {/* РЕЗУЛЬТАТ */}
         <section id="master-result" className={styles.block}>
           <h3 className={styles.blockTitle}>Что меняется после мастер-классов</h3>
           <p className={styles.blockText}>Вы начинаете видеть свои ошибки и понимать, как их исправить<br/>Ваши работы становятся чище, увереннее и профессиональнее<br/>А вместе с этим растёт и ваша ценность как мастера</p>
         </section>
-
         {/* СВЯЗКА С РОСТОМ */}
         <section id="growth-link" className={styles.block}>
           <p className={styles.blockText}>Мастер-классы — это следующий шаг после базового обучения<br/>Именно здесь начинается переход от “умею стричь” к “работаю на уровне”</p>
         </section>
-
         {/* CTA */}
         <section id="master-cta" className={styles.block}>
           <h3 className={styles.blockTitle}>Выберите мастер-класс</h3>
@@ -219,7 +190,6 @@ export function AboutAcademy() {
             <a href="#contacts" className={styles.courseBtnAlt}>Получить консультацию</a>
           </div>
         </section>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
       </div>
     </section>
   );

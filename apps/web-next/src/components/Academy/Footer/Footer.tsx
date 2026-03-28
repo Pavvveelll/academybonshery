@@ -77,7 +77,6 @@ export function Footer() {
               <a href="tel:+74999940140" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Позвонить в академию">
                 8 (499) 994-01-40
               </a>
-<<<<<<< HEAD
             </li>
             <li>
               <span className={styles.contactIcon} aria-hidden="true">
@@ -85,18 +84,10 @@ export function Footer() {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                 </svg>
               </span>
-              <div>
-                <a href="tel:+79258899963" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Telegram / WhatsApp">
-                  8 (925) 889-99-63
-                </a>
-                <span className={styles.contactHint}>&nbsp;Telegram · WhatsApp</span>
-              </div>
-=======
               <a href="tel:+79258899963" className={`${styles.contactLink} ${styles.tooltipTarget}`} data-tooltip="Telegram / WhatsApp">
                 8 (925) 889-99-63
               </a>
               <span className={styles.contactHint}>&nbsp;Telegram · WhatsApp</span>
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
             </li>
             <li>
               <span className={styles.contactIcon} aria-hidden="true">
@@ -161,18 +152,7 @@ export function Footer() {
             ))}
           </ul>
 
-<<<<<<< HEAD
-          <div className={styles.payments}>
-            <p className={styles.payTitle}>Принимаем к оплате</p>
-            <div className={styles.payBadges}>
-              <span className={`${styles.payBadge} ${styles.tooltipTarget}`} data-tooltip="Банковская карта">VISA</span>
-              <span className={`${styles.payBadge} ${styles.tooltipTarget}`} data-tooltip="Банковская карта">Mastercard</span>
-              <span className={`${styles.payBadge} ${styles.tooltipTarget}`} data-tooltip="Национальная платёжная система">МИР</span>
-            </div>
-          </div>
-=======
           {/* payments block удалён по запросу */}
->>>>>>> 6392f78 (fix: центрирование фото в блоке FounderSection)
         </div>
       </div>
 
