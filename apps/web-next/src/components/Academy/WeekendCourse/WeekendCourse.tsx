@@ -11,9 +11,8 @@ export function WeekendCourse() {
   return (
     <section id="weekend" className={styles.section}>
       <div className={styles.container}>
-      {/* Removed WeekendCourse_card div */}
+        {/* Removed WeekendCourse_card div */}
       </div>
     </section>
-  return null;
   );
 }
